@@ -46,6 +46,9 @@ $('#sign-up-form').formValidation({
 })
 .on('err.form.fv', function(e) {
     $('#sign-up-modal').addClass('shake animated');
+    setTimeout(function(){
+            $('#sign-up-modal').delay(1300).removeClass('bounceInDown animated');
+      },1300);
 })
 .on('success.form.fv', function(e) {
     e.preventDefault();
