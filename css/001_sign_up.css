@@ -1,0 +1,56 @@
+/* sign up button */
+#sign-up-btn {
+  border: 1px solid #808080;
+}
+.blink {
+-webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+
+  -webkit-animation-direction: normal;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: blink;
+  -webkit-animation-timing-function: ease-in-out;
+
+  -moz-animation-direction: normal;
+  -moz-animation-duration: 2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-name: blink;
+  -moz-animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes blink {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: .7;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+      opacity: .7;
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: .7;
+  }
+}
+
+/* success message */
+#success-message {
+  display: none;
+  padding: 15px;
+  font-weight: bold;
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  border-radius: 10px;
+}
