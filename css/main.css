@@ -7,6 +7,9 @@ header {
 main a {
   font-size: 20px
 }
+main li {
+  margin-bottom: 7px;
+}
 
 /* footer */
 footer {
