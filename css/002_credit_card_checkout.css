@@ -1,0 +1,40 @@
+/* summary */
+#success-message {
+  display: none;
+  padding: 15px;
+  font-weight: bold;
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  border-radius: 10px;
+}
+
+/* checkout */
+#cc-icons {
+  margin-top: 15px;
+}
+.cc-icon {
+  color: #555;
+  margin-left: 3px;
+  margin-right: 3px;
+  font-size: 30px;
+}
+#cc-form-container {
+  margin-top: 15px;
+}
+#cc-input {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+/* sample card numbers */
+#sample-card-numbers {
+  margin-top: 15px;
+}
+#card-numbers {
+  margin-top: 15px;
+}
+#example-cc-toggle {
+  margin-bottom: 10px;
+}

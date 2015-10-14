@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>002: Credit Card Checkout | Daily UI</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib/animate.css">
+    <link rel="stylesheet" href="css/lib/formValidation.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/002_credit_card_checkout.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <header class="row text-center">
+        <div class="col-md-12">
+          <h1>002: Credit Card Checkout</h1>
+        </div>
+      </header>
+
+      <main>
+        <!--menu -->
+        <div class="row text-center">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <ul class="nav nav-tabs">
+              <li>
+                <a href="#"><i class="fa fa-shopping-cart"></i> Cart</a>
+              </li>
+              <li class="active">
+              <a href="#"><i class="fa fa-credit-card"></i> Checkout</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+        <!-- summary -->
+        <div id="order-summary" class="row text-center">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <hr>
+            <h3 id="total">Total: $24.99</h3>
+            <p id="success-message"><i class="fa fa-check"></i> Thanks for your order!</p>
+            <hr>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+        <!-- checkout -->
+        <div id="cc-icons" class="row text-center">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <i class="fa fa-cc-visa cc-icon" title="We accept Visa"></i>
+            <i class="fa fa-cc-mastercard cc-icon" title="We accept MasterCard"></i>
+            <i class="fa fa-cc-amex cc-icon" title="We accept American Express"></i>
+            <i class="fa fa-cc-discover cc-icon" title="We accept Discover"></i>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+        <div id="cc-form-container" class="row text-center">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <form id="cc-form">
+              <div id="cc-input" class="form-group">
+                <label class="control-label">Credit Card Number</label>
+                <input type="text" class="form-control text-center" name="card" placeholder="Credit card number" />
+              </div>
+              <div class="col-sm-6 form-group">
+                <label class="control-label">Expiration</label>
+                <input type="text" class="form-control text-center" name="expiration" placeholder="YYYY/MM" />
+              </div>
+              <div class="col-sm-6 form-group">
+                <label class="control-label">Security Code</label>
+                <input type="text" class="form-control text-center" name="security" placeholder="Security Code" />
+              </div>
+              <div class="col-md-12">
+                <button type="submit" class="btn btn-default" title="Submit">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+
+        <!-- sample card numbers -->
+        <div id="sample-card-numbers" class="row text-center">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <div id="card-numbers" class="collapse">
+              <p><b>Visa:</b> 4929 2489 8029 5542</p>
+              <p><b>MasterCard:</b> 5303 7650 1360 0904</p>
+              <p><b>American Express:</b> 3406 537055 97107</p>
+              <p><b>Discover:</b> 6011 7346 7492 9094</p>
+            </div>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+      </main>
+
+      <footer class="row text-center">
+        <div class="col-md-12">
+          <hr>
+          <button id="example-cc-toggle" class="btn btn-default" data-toggle="collapse" data-target="#card-numbers">Examples CC #s</button>
+          <p>
+            <small>October 14 2015</small>
+          </p>
+          <a href="/daily_ui/">Back to Daily UI Index</a>
+        </div>
+      </footer>
+      <main class="row text-center">
+      </main>
+    </div>
+
+    <script src="js/lib/jquery-2.1.1.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/formValidation.min.js"></script>
+    <script src="js/lib/formValidationBootstrapFramework.min.js"></script>
+    <script src="js/002_credit_card_checkout.js"></script>
+  </body>
+</html>
