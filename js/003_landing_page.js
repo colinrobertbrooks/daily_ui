@@ -31,9 +31,8 @@ $(document).ready(function() {
 function setSplashImage () {
   splashImages = randomizeArray(splashImages);
   $('.splash')
-    .css('position', 'relative')
     .css('height', '100%')
-    .css('background', 'rgb(245, 246, 250) url(' + splashImages[0].link + ') fixed center center')
+    .css('background', 'url(' + splashImages[0].link + ') fixed center center')
     .css('-webkit-background-size', 'cover')
     .css('background-size', 'cover')
     .css('color', '#fff');
@@ -64,6 +63,7 @@ function emailSubmit () {
     $('#splash-email').addClass('fadeOutDownBig animated');
     setTimeout(function() {
       $('#splash-email').hide();
+      $(document).trigger('resize');
       $('#splash-email-success')
         .show()
         .addClass('fadeInUpBig animated');

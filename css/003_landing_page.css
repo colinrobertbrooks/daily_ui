@@ -28,7 +28,6 @@ body {
 }
 @media only screen and (max-width: 1200px)  {
   .splash {
-    position: relative;
     height: 100%;
     background: rgb(245, 246, 250) url('../img/003_landing_page/4-min.jpg') fixed center center;
     -webkit-background-size', 'cover
@@ -45,15 +44,21 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 80px;
   font-weight: bold;
-  text-shadow: rgb(0, 0, 0) 1px 1px 1px;
   margin-bottom: 0px;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 .splash-content h2 {
   font-family: 'Lato', sans-serif;
   font-size: 40px;
   font-weight: bold;
-  text-shadow: rgb(0, 0, 0) 1px 1px 1px;
   margin-top: 0px;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+@media only screen and (min-width: 1200px)  {
+  .splash-content h1,
+  .splash-content h2 {
+    text-shadow: rgb(0, 0, 0) 1px 1px 1px;
+  }
 }
 
 /* splash email */
