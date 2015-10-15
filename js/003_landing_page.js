@@ -1,10 +1,10 @@
 //global vars
 var splashImages = [
-  {link:"../img/003_landing_page/1.jpg"},
-  {link:"../img/003_landing_page/2.jpg"},
-  {link:"../img/003_landing_page/3.jpg"},
-  {link:"../img/003_landing_page/4.jpg"},
-  {link:"../img/003_landing_page/5.jpg"},
+  {link:"img/003_landing_page/1-min.jpg"},
+  {link:"img/003_landing_page/2-min.jpg"},
+  {link:"img/003_landing_page/3-min.jpg"},
+  {link:"img/003_landing_page/4-min.jpg"},
+  {link:"img/003_landing_page/5-min.jpg"},
 ];
 
 
