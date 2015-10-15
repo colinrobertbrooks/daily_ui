@@ -28,18 +28,17 @@ $( document ).keypress(function(e) {
     var key = filteredKeys[0].key;
     var oldImediate = $('#imediate').text();
     if(key == ' = ') {
-      if(+oldImediate != 0) {
-        d3.select('#history')
-          .append('p')
-          .text(oldImediate + ' = ')
-            .append('span')
-            .text(parseFloat(eval(oldImediate)));
-        d3.select('#history').append('p')
-          .text('-------------------------')
-          .classed('new-line','true');
-        d3.select('#imediate').text('0');
-        $('#evaluate-btn').prop('disabled', true);
-      }
+      //evaluate
+      d3.select('#history')
+        .append('p')
+        .text(oldImediate + ' = ')
+          .append('span')
+          .text(parseFloat(eval(oldImediate)));
+      d3.select('#history').append('p')
+        .text('-------------------------')
+        .classed('new-line','true');
+      d3.select('#imediate').text('0');
+      $('#evaluate-btn').prop('disabled', true);
     } else {
       //first char cases
       if(+oldImediate == 0) {
@@ -77,8 +76,10 @@ $( document ).keypress(function(e) {
           if(key == ' - ') {
             //previous character check
             if(oldImediate[oldImediate.length-1] != ' ') {
-              //subtraction operator
-              d3.select('#imediate').text(oldImediate + key);
+              //subtraction operator if it won't be the 3rd consecutive
+              if(oldImediate.substring(oldImediate.length - 3) != '- -') {
+                d3.select('#imediate').text(oldImediate + key);
+              }
             } else {
               //negative char
               d3.select('#imediate').text(oldImediate + '-');
@@ -95,6 +96,7 @@ $( document ).keypress(function(e) {
         }
       }
     }
+    //scroll lcd to bottom
     $('#lcd').animate({scrollTop: $('#lcd')[0].scrollHeight}, 0);
   }
 });
