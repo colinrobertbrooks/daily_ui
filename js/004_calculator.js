@@ -64,8 +64,18 @@ $( document ).keypress(function(e) {
       } else {
         //non-operator case
         if([' - ',' + ',' * ',' / '].indexOf(key) == -1) {
-          //add non-operator char
-          d3.select('#imediate').text(oldImediate + key);
+          //decimal check
+          if(key == '.') {
+            //ensure no more than one consecutive decimal and no more than 1 in a number
+            var decimalCheckArr = oldImediate.split(' ');
+            if(oldImediate[oldImediate.length-1] != '.' && decimalCheckArr[decimalCheckArr.length - 1].indexOf('.') == -1) {
+              //add decimal
+              d3.select('#imediate').text(oldImediate + key);
+            }
+          } else {
+            //add non-operator char
+            d3.select('#imediate').text(oldImediate + key);
+          }
           //check if at least one operator exists before enabling evaluate
           if(oldImediate.search(' ') != -1) {
             $('#evaluate-btn').prop('disabled', false);
@@ -85,7 +95,7 @@ $( document ).keypress(function(e) {
               d3.select('#imediate').text(oldImediate + '-');
             }
             $('#evaluate-btn').prop('disabled', true);
-          //all other operator cases
+          //remaining case
           } else {
             //check if last char was an operator
             if(oldImediate[oldImediate.length-1] != ' ') {
