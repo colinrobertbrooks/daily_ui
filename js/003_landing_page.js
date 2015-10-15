@@ -29,12 +29,10 @@ $(document).ready(function() {
 //splash functions
 function setSplashImage () {
   splashImages = randomizeArray(splashImages);
-  $('.splash')
-    .css('height', '100%')
+  $('body#background')
     .css('background', 'url(' + splashImages[0].link + ') fixed center center')
     .css('-webkit-background-size', 'cover')
-    .css('background-size', 'cover')
-    .css('color', '#fff');
+    .css('background-size', 'cover');
 }
 
 function positionSplashContent() {
@@ -58,14 +56,14 @@ function emailSubmit () {
   if(validateEmail(input) === true) {
     $('#email-address').blur();
     $('#splash-email')
-      .addClass('slideOutRight animated');
+      .addClass('fadeOut animated');
     setTimeout(function() {
       $('#splash-email')
         .hide();
       $('#splash-email-success')
         .show()
-        .addClass('slideInLeft animated');
-    }, 400);
+        .addClass('bounceIn animated');
+    }, 750);
   } else {
     $('#email-submit').css('pointer-events', 'none');
     $('#splash-email').addClass('shake animated');
