@@ -56,24 +56,16 @@ $( window ).resize(function() {
 function emailSubmit () {
   var input = $('#email-address')[0].value;
   if(validateEmail(input) === true) {
-    $('#contact-container')
-      .removeClass('fadeInUp animated')
-      .hide();
     $('#email-address').blur();
     $('#splash-email')
-      .addClass('fadeOutDownBig animated');
+      .addClass('slideOutRight animated');
     setTimeout(function() {
       $('#splash-email')
         .hide();
       $('#splash-email-success')
         .show()
-        .addClass('fadeInUpBig animated');
+        .addClass('slideInLeft animated');
     }, 400);
-    setTimeout(function() {
-      $('#contact-container')
-        .show()
-        .addClass('fadeIn animated');
-    }, 1300);
   } else {
     $('#email-submit').css('pointer-events', 'none');
     $('#splash-email').addClass('shake animated');
