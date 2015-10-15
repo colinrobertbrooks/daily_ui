@@ -10,7 +10,11 @@ var splashImages = [
 
 //document ready functions
 $(document).ready(function() {
-  setSplashImage();
+  console.log(screenWidth);
+  var screenWidth = $(document).width();
+  if(screenWidth > 992) {
+    setSplashImage();
+  }
   positionSplashContent();
   setTimeout(function() {
     $('#splash-text-container')
@@ -42,6 +46,10 @@ function positionSplashContent() {
 }
 
 $( window ).resize(function() {
+  var screenWidth = $(document).width();
+  if(screenWidth > 992) {
+    setSplashImage();
+  }
   positionSplashContent();
 });
 

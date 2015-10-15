@@ -26,6 +26,16 @@ body {
   background-color: rgba(0, 0, 0, 0.05);
   background-image: url(../img/003_landing_page/grid.png);
 }
+@media only screen and (max-width: 992px)  {
+  .splash {
+    position: relative;
+    height: 100%;
+    background: rgb(245, 246, 250) url('../img/003_landing_page/4-min.jpg') fixed center center;
+    -webkit-background-size', 'cover
+    background-size: cover;
+    color: #fff;
+  }
+}
 
 /* splash text */
 #splash-text-container {
