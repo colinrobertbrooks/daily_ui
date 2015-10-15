@@ -42,7 +42,7 @@ $( document ).keypress(function(e) {
     } else {
       //first char cases
       if(+oldImediate == 0) {
-        //can't add an operator or a decimal in first char
+        //can't add an operator as first char
         if([' + ',' * ',' / '].indexOf(key) == -1) {
           //decimal check
           if(key == '.' || oldImediate[oldImediate.length-1] == '.') {
@@ -54,7 +54,7 @@ $( document ).keypress(function(e) {
               // 0 with negative char
               d3.select('#imediate').text('-');
             } else {
-              //replace 0 with first number
+              //replace 0 with non-operator
               d3.select('#imediate').text(key);
             }
           }
@@ -87,7 +87,7 @@ $( document ).keypress(function(e) {
             //previous character check
             if(oldImediate[oldImediate.length-1] != ' ') {
               //subtraction operator if it won't be the 3rd consecutive
-              if(oldImediate.substring(oldImediate.length - 3) != '- -') {
+              if(oldImediate != '-' && oldImediate.substring(oldImediate.length - 3) != '- -') {
                 d3.select('#imediate').text(oldImediate + key);
               }
             } else {

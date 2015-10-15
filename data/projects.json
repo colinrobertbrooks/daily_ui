@@ -1,0 +1,36 @@
+{
+  "projects": [
+    {
+      "key": 1,
+      "name": "001: Sign Up",
+      "date": "October 13, 2015",
+      "link": "/daily_ui/001_sign_up",
+      "image": "001_sign_up.jpg",
+      "description": "A sign up modal with form validation and animated feedback."
+    },
+    {
+      "key": 2,
+      "name": "002: Credit Card Checkout",
+      "date": "October 14, 2015",
+      "link": "/daily_ui/002_credit_card_checkout",
+      "image": "002_credit_card_checkout.jpg",
+      "description": "A credit card checkout screen with form validation, credit card type detection (examples provided) and animated feedback."
+    },
+    {
+      "key": 3,
+      "name": "003: Landing Page",
+      "date": "October 15, 2015",
+      "link": "/daily_ui/003_landing_page",
+      "image": "003_landing_page.jpg",
+      "description": "A landing page with rotating background images and a sign up input with email validation and animated feedback."
+    },
+    {
+      "key": 4,
+      "name": "004: Calculator",
+      "date": "October 16, 2015",
+      "link": "/daily_ui/004_calculator",
+      "image": "004_calculator.jpg",
+      "description": "A functional, simple calculator with error handling and equation logging."
+    }
+  ]
+}

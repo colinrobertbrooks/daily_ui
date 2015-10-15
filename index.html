@@ -7,40 +7,50 @@
     <title>Daily UI | Colin Cummings</title>
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
     <div class="container">
+
       <header class="row text-center">
         <div class="col-md-12">
           <h1>Daily UI</h1>
+          <hr>
         </div>
       </header>
+
+      <section id="about" class="row text-center">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <h2>About</h2>
+          <p>These are my designs for the <a href="http://dailyui.co/">100 Day UI Elements Challenge</a>. I intend to create a fully-functional front end component for each challenge as opposed to a design mockup. My goal is to build a collection of simple, interactive, responsive and reusable elements using open-source framework, including Bootsrap and D3.</p>
+          <p>- <a href="http://colinrcummings.github.io">Colin</a></p>
+        </div>
+        <div class="col-md-2"></div>
+      </section>
+
       <main class="row text-center">
         <div class="col-md-12">
-          <ul class="list-unstyled">
-            <li>
-              <a href="/daily_ui/001_sign_up">001: Sign Up</a>
-            </li>
-            <li>
-              <a href="/daily_ui/002_credit_card_checkout">002: Credit Card Checkout</a>
-            </li>
-            <li>
-              <a href="/daily_ui/003_landing_page">003: Landing Page</a>
-            </li>
-            <li>
-              <a href="/daily_ui/004_calculator">004: Calculator</a>
-            </li>
-          </ul>
+          <hr>
+          <h2>Projects</h2>
+        </div>
+        <div id="projects-hook">
+          <!-- projects -->
         </div>
       </main>
+
       <footer class="row text-center">
         <div class="col-md-12">
           <hr>
-          <p><a href="http://dailyui.co/">Daily UI</a> exercises by <a href="http://colinrcummings.github.io">Colin Cummings</a></p>
+
+          <p><a href="http://dailyui.co/">100 Day UI Elements</a> by <a href="http://colinrcummings.github.io">Colin Cummings</a></p>
         </div>
       </footer>
+
     </div>
+    <script src="js/lib/d3.min.js"></script>
     <script src="js/lib/jquery-2.1.1.min.js"></script>
     <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
