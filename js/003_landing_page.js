@@ -46,7 +46,7 @@ $( window ).resize(function() {
 });
 
 
-//validate email functions
+//email functions
 function emailSubmit () {
   var input = $('#email-address')[0].value;
   if(validateEmail(input) === true) {
