@@ -26,7 +26,7 @@ body {
   background-color: rgba(0, 0, 0, 0.05);
   background-image: url(../img/003_landing_page/grid.png);
 }
-@media only screen and (max-width: 992px)  {
+@media only screen and (max-width: 1200px)  {
   .splash {
     position: relative;
     height: 100%;

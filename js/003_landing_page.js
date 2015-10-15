@@ -12,7 +12,7 @@ var splashImages = [
 $(document).ready(function() {
   console.log(screenWidth);
   var screenWidth = $(document).width();
-  if(screenWidth > 992) {
+  if(screenWidth > 1200) {
     setSplashImage();
   }
   positionSplashContent();
@@ -47,7 +47,7 @@ function positionSplashContent() {
 
 $( window ).resize(function() {
   var screenWidth = $(document).width();
-  if(screenWidth > 992) {
+  if(screenWidth > 1200) {
     setSplashImage();
   }
   positionSplashContent();
