@@ -29,9 +29,13 @@ body {
 @media only screen and (max-width: 1200px)  {
   .splash {
     height: 100%;
-    background: rgb(245, 246, 250) url('../img/003_landing_page/4-min.jpg') fixed center center;
-    -webkit-background-size', 'cover
+    background-image: url(../img/003_landing_page/4-min.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
+    -webkit-background-size, cover;
+    background-color: rgba(0, 0, 0, 0.05);
     color: #fff;
   }
 }

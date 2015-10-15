@@ -10,7 +10,6 @@ var splashImages = [
 
 //document ready functions
 $(document).ready(function() {
-  console.log(screenWidth);
   var screenWidth = $(document).width();
   if(screenWidth > 1200) {
     setSplashImage();
@@ -58,12 +57,14 @@ function emailSubmit () {
   var input = $('#email-address')[0].value;
   if(validateEmail(input) === true) {
     $('#contact-container')
-      .hide()
-      .removeClass('fadeInUp animated');
-    $('#splash-email').addClass('fadeOutDownBig animated');
+      .removeClass('fadeInUp animated')
+      .hide();
+    $('#email-address').blur();
+    $('#splash-email')
+      .addClass('fadeOutDownBig animated');
     setTimeout(function() {
-      $('#splash-email').hide();
-      $(document).trigger('resize');
+      $('#splash-email')
+        .hide();
       $('#splash-email-success')
         .show()
         .addClass('fadeInUpBig animated');
