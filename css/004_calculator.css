@@ -1,0 +1,36 @@
+main {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 25px;
+  border: 1px solid #666;
+  border-radius: 8px;
+}
+#lcd {
+  width: 230px;
+  height: 120px;
+  margin-top: -20px;
+  margin-bottom: 8px;
+  margin-left: 24px;
+  padding-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: rgba( 91, 192, 222, 0.1);
+}
+#lcd p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 12px;
+  font-family: 'consolas', sans-serif;
+  word-break: break-all
+}
+#lcd p span {
+  font-weight: bold;
+}
+.calc-btn {
+  margin-top: 5px;
+  min-width: 55px;
+  min-height: 55px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>004: Calculator | Daily UI</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/004_calculator.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <header class="row text-center">
+        <div class="col-md-12">
+          <h1>004: Calculator</h1>
+        </div>
+      </header>
+
+      <main>
+        <div class="row">
+          <div class="col-md-12 text-left">
+            <div id="lcd">
+              <div id="history">
+              </div>
+              <p id="imediate">0</p>
+            </div>
+          </div>
+          <div class="col-md-12 text-center">
+            <button type="button" class="btn btn-default calc-btn" onclick="simulateKeyPress(55)">7</button>
+            <button type="button" class="btn btn-default calc-btn" onclick="simulateKeyPress(56)">8</button>
+            <button type="button" class="btn btn-default calc-btn" onclick="simulateKeyPress(57)">9</button>
+            <button type="button" class="btn btn-primary calc-btn" onclick="simulateKeyPress(47)">/</button>
+          </div>
+          <div class="col-md-12 text-center">
+            <button type="button" class="btn btn-default calc-btn" onclick="simulateKeyPress(52)">4</button>
+            <button type="button" class="btn btn-default calc-btn" onclick="simulateKeyPress(53)">5</button>
+            <button type="button" class="btn btn-default calc-btn" onclick="simulateKeyPress(54)">6</button>
+            <button type="button" class="btn btn-primary calc-btn" onclick="simulateKeyPress(73)">x</button>
+          </div>
+          <div class="col-md-12 text-center">
+            <button type="button" class="btn btn-default calc-btn" onclick="simulateKeyPress(49)">1</button>
+            <button type="button" class="btn btn-default calc-btn" onclick="simulateKeyPress(50)">2</button>
+            <button type="button" class="btn btn-default calc-btn" onclick="simulateKeyPress(51)">3</button>
+            <button type="button" class="btn btn-primary calc-btn" onclick="simulateKeyPress(45)">-</button>
+          </div>
+          <div class="col-md-12 text-center">
+            <button type="button" class="btn btn-default calc-btn" onclick="simulateKeyPress(48)">0</button>
+            <button type="button" class="btn btn-default calc-btn" onclick="simulateKeyPress(46)">.</button>
+            <button type="button" class="btn btn-warning calc-btn" id="evaluate-btn" onclick="simulateKeyPress(13)" disabled>=</button>
+            <button type="button" class="btn btn-primary calc-btn" onclick="simulateKeyPress(43)">+</button>
+          </div>
+        </div>
+      </main>
+
+      <footer class="row text-center">
+        <div class="col-md-12">
+          <hr>
+          <p>
+            <small>October 16, 2015</small>
+          </p>
+          <a href="/daily_ui/">Back to Daily UI Index</a>
+        </div>
+      </footer>
+
+    </div>
+    <script src="js/lib/d3.min.js"></script>
+    <script src="js/lib/jquery-2.1.1.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/004_calculator.js"></script>
+  </body>
+</html>
