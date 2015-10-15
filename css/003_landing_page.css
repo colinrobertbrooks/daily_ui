@@ -9,6 +9,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
+    background-color: rgba(0, 81, 126, 0.8);
   }
 }
 /* splash text */
@@ -86,6 +87,7 @@ body {
 #contact-container {
   display: none;
   margin-top: 25px;
+  margin-bottom: 10px;
 }
 .contact-icon {
   color: rgba(255, 255, 255, 0.9);
