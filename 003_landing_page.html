@@ -4,48 +4,61 @@
     <meta charset="utf-8">
     <meta http-equiv="x-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>003:Landing Page | Daily UI</title>
+    <title>003: Landing Page | Daily UI</title>
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="css/lib/animate.css">
-    <link rel="stylesheet" href="css/lib/formValidation.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/000_starter.css">
+    <link rel="stylesheet" href="css/003_landing_page.css">
   </head>
   <body>
 
-    <div class="container">
-      <header class="row text-center">
-        <div class="col-md-12">
-          <h1>003: Landing Page</h1>
-        </div>
-      </header>
-
-      <main>
-        <div class="row text-center">
-          <div class="col-md-3"></div>
-          <div class="col-md-6">
+    <section class="splash">
+      <div class="texture-overlay"></div>
+      <div class="splash-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-2 col-md-3"></div>
+            <div class="col-sm-8 col-md-6 text-center">
+              <!-- text -->
+              <div id="splash-text-container">
+                <h1>003</h1>
+                <h2>Landing Page</h2>
+              </div>
+              <!-- email -->
+              <div id="splash-email-container">
+                <div id="splash-email" class="input-group">
+                  <input type="text" class="form-control text-center" id="email-address" placeholder="you@domain.com" spellcheck="false">
+                  <span class="input-group-addon" id="email-submit" onclick="emailSubmit(this)">
+                    <i class="fa fa-paper-plane" title="Sign Up"></i>
+                  </span>
+                </div>
+                <p id="splash-email-success">
+                  <i class="fa fa-check"></i>
+                  Thanks for signing up!
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-2 col-md-3"></div>
           </div>
-          <div class="col-md-3"></div>
+          <!-- contact -->
+          <div id="contact-container" class="row">
+            <div class="col-sm-2 col-md-3"></div>
+            <div class="col-sm-8 col-md-6 text-center">
+              <i class="fa fa-facebook-square contact-icon" title="Like us on Facebook"></i>
+              <i class="fa fa-twitter-square contact-icon" title="Follow us on Twitter"></i>
+              <i class="fa fa-instagram contact-icon" title="Follow us on Instagram"></i>
+              <i class="fa fa-pinterest-square contact-icon" title="Follow us on Pinterest"></i>
+            </div>
+            <div class="col-sm-2 col-md-3"></div>
+          </div>
         </div>
-      </main>
-
-      <footer class="row text-center">
-        <div class="col-md-12">
-          <hr>
-          <p>
-            <small>October 15, 2015</small>
-          </p>
-          <a href="/daily_ui/">Back to Daily UI Index</a>
-        </div>
-      </footer>
-
-    </div>
+      </div>
+    </section>
 
     <script src="js/lib/jquery-2.1.1.min.js"></script>
     <script src="js/lib/bootstrap.min.js"></script>
-    <script src="js/lib/formValidation.min.js"></script>
-    <script src="js/lib/formValidationBootstrapFramework.min.js"></script>
-    <script src="js/000_starter.js"></script>
+    <script src="js/003_landing_page.js"></script>
   </body>
 </html>
