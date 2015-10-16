@@ -41,7 +41,7 @@ $( document ).keypress(function(e) {
       $('#evaluate-btn').prop('disabled', true);
     } else {
       //first char cases
-      if(+oldImediate == 0) {
+      if(oldImediate == '0') {
         //can't add an operator as first char
         if([' + ',' * ',' / '].indexOf(key) == -1) {
           //decimal check
@@ -51,10 +51,10 @@ $( document ).keypress(function(e) {
           } else {
             //negative first char case
             if(key == ' - ') {
-              // 0 with negative char
+              // zero with negative char
               d3.select('#imediate').text('-');
             } else {
-              //replace 0 with non-operator
+              //replace zero with non-operator
               d3.select('#imediate').text(key);
             }
           }
@@ -72,9 +72,16 @@ $( document ).keypress(function(e) {
               //add decimal
               d3.select('#imediate').text(oldImediate + key);
             }
+          //add non-operator char
           } else {
-            //add non-operator char
-            d3.select('#imediate').text(oldImediate + key);
+            //octal check
+            if(oldImediate.slice(-2) == ' 0' || oldImediate.slice(-2) == '-0') {
+              //overwrite leading zeros to block octals
+              d3.select('#imediate').text(oldImediate.substring(0,oldImediate.length - 1) + key);
+            } else {
+              //append normally
+              d3.select('#imediate').text(oldImediate + key);
+            }
           }
           //check if at least one operator exists before enabling evaluate
           if(oldImediate.search(' ') != -1) {
@@ -86,8 +93,8 @@ $( document ).keypress(function(e) {
           if(key == ' - ') {
             //previous character check
             if(oldImediate[oldImediate.length-1] != ' ') {
-              //subtraction operator if it won't be the 3rd consecutive
-              if(oldImediate != '-' && oldImediate.substring(oldImediate.length - 3) != '- -') {
+              //subtraction operator if it won't be the third in a row of if it won't follow another operator
+              if(oldImediate != '-' && oldImediate.substring(oldImediate.length - 3) != '- -' && oldImediate.substring(oldImediate.length - 1) != '-') {
                 d3.select('#imediate').text(oldImediate + key);
               }
             } else {
@@ -97,8 +104,8 @@ $( document ).keypress(function(e) {
             $('#evaluate-btn').prop('disabled', true);
           //remaining case
           } else {
-            //check if last char was an operator
-            if(oldImediate[oldImediate.length-1] != ' ') {
+            //check if last char was an operator or a //negative char
+            if(oldImediate[oldImediate.length-1] != ' ' && oldImediate.slice(-1) != '-') {
               d3.select('#imediate').text(oldImediate + key);
             }
             $('#evaluate-btn').prop('disabled', true);
