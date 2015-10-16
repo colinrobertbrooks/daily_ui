@@ -27,8 +27,9 @@ $( document ).keypress(function(e) {
   if(filteredKeys.length === 1){
     var key = filteredKeys[0].key;
     var oldImediate = $('#imediate').text();
+    //evaluate check
     if(key == ' = ') {
-      //evaluate
+      //evaluate imediate and update lcd
       d3.select('#history')
         .append('p')
         .text(oldImediate + ' = ')
@@ -39,47 +40,48 @@ $( document ).keypress(function(e) {
         .classed('new-line','true');
       d3.select('#imediate').text('0');
       $('#evaluate-btn').prop('disabled', true);
+    //otherwise process key and update imediate
     } else {
-      //first char cases
+      //check if first character and process key
       if(oldImediate == '0') {
-        //can't add an operator as first char
+        //operator check (can't append an operator as first char; special case below for -)
         if([' + ',' * ',' / '].indexOf(key) == -1) {
           //decimal check
           if(key == '.' || oldImediate[oldImediate.length-1] == '.') {
-            //decimal first char case
+            //append decimal to leading zero
             d3.select('#imediate').text(oldImediate + key);
           } else {
-            //negative first char case
+            //negative first char check
             if(key == ' - ') {
-              // zero with negative char
+              //replace zero with negative char
               d3.select('#imediate').text('-');
             } else {
-              //replace zero with non-operator
+              //replace zero with number
               d3.select('#imediate').text(key);
             }
           }
           $('#evaluate-btn').prop('disabled', true);
         }
-      //subsequent char cases
+      //otherwise process key as subsequent char
       } else {
-        //non-operator case
+        //non-operator check
         if([' - ',' + ',' * ',' / '].indexOf(key) == -1) {
           //decimal check
           if(key == '.') {
-            //ensure no more than one consecutive decimal and no more than 1 in a number
+            //ensure no more than one consecutive decimal and no more than one decimal in a number
             var decimalCheckArr = oldImediate.split(' ');
             if(oldImediate[oldImediate.length-1] != '.' && decimalCheckArr[decimalCheckArr.length - 1].indexOf('.') == -1) {
-              //add decimal
+              //append decimal
               d3.select('#imediate').text(oldImediate + key);
             }
-          //add non-operator char
+          //otherwise append number
           } else {
             //octal check
             if(oldImediate.slice(-2) == ' 0' || oldImediate.slice(-2) == '-0') {
-              //overwrite leading zeros to block octals
+              //overwrite leading zero with number to block octals
               d3.select('#imediate').text(oldImediate.substring(0,oldImediate.length - 1) + key);
             } else {
-              //append normally
+              //append number normally
               d3.select('#imediate').text(oldImediate + key);
             }
           }
@@ -87,25 +89,26 @@ $( document ).keypress(function(e) {
           if(oldImediate.search(' ') != -1) {
             $('#evaluate-btn').prop('disabled', false);
           }
-        //operator cases
+        //otherwise operator cases
         } else {
-          //minus case
+          //subtraction operator vs negative char cases
           if(key == ' - ') {
-            //previous character check
+            //previous character was operator check
             if(oldImediate[oldImediate.length-1] != ' ') {
-              //subtraction operator if it won't be the third in a row of if it won't follow another operator
+              //append subtraction operator if it won't be the third in a row of if it won't immediately follow an operator
               if(oldImediate != '-' && oldImediate.substring(oldImediate.length - 3) != '- -' && oldImediate.substring(oldImediate.length - 1) != '-') {
                 d3.select('#imediate').text(oldImediate + key);
               }
             } else {
-              //negative char
+              //append negative char
               d3.select('#imediate').text(oldImediate + '-');
             }
             $('#evaluate-btn').prop('disabled', true);
-          //remaining case
+          //remaining operator case
           } else {
-            //check if last char was an operator or a //negative char
+            //check that last char was not an operator and not a negative char
             if(oldImediate[oldImediate.length-1] != ' ' && oldImediate.slice(-1) != '-') {
+              //append operator normally
               d3.select('#imediate').text(oldImediate + key);
             }
             $('#evaluate-btn').prop('disabled', true);
