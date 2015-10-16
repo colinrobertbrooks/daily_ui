@@ -1,3 +1,4 @@
+/* about */
 #about {
   margin-top: -30px;
 }
@@ -7,6 +8,33 @@
 #about p {
   font-size: 17px;
 }
+.social-links a {
+  margin-top: 15px;
+  margin-left: 2px;
+  margin-right: 2px;
+  font-size: 18px;
+  color: #8e8e8e;
+}
+#website-link:hover {
+  color: #333;
+}
+#github-link:hover {
+  color: #333;
+}
+#linkedin-link:hover {
+  color: #0077B5;
+}
+#facebook-link:hover {
+  color: #3b5998;
+}
+#twitter-link:hover {
+  color: #55acee;
+}
+#instagram-link:hover {
+  color: #3f729b;
+}
+
+/* projects */
 .project {
   margin-top: 15px;
   margin-bottom: 10px;
