@@ -12,7 +12,7 @@ var keyMap = [
   {code: 46, key: '.'},
   {code: 43, key: ' + '},
   {code: 45, key: ' - '},
-  {code: 73, key: ' * '},
+  {code: 42, key: ' * '},
   {code: 47, key: ' / '},
   {code: 13, key: ' = '},
   {code: 61, key: ' = '}
@@ -104,7 +104,7 @@ $( document ).keypress(function(e) {
               d3.select('#imediate').text(oldImediate + '-');
             }
             $('#evaluate-btn').prop('disabled', true);
-          //remaining operator case
+          //otherwise remaining operator case
           } else {
             //check that last char was not an operator and not a negative char
             if(oldImediate[oldImediate.length-1] != ' ' && oldImediate.slice(-1) != '-') {
