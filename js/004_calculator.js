@@ -27,7 +27,7 @@ $( document ).keypress(function(e) {
   if(filteredKeys.length === 1){
     var key = filteredKeys[0].key;
     var oldImediate = $('#imediate').text();
-    //evaluate check
+    //check if key is equal siqn
     if(key == ' = ') {
       //evaluate imediate and update lcd
       d3.select('#history')
@@ -42,16 +42,16 @@ $( document ).keypress(function(e) {
       $('#evaluate-btn').prop('disabled', true);
     //otherwise process key and update imediate
     } else {
-      //check if first character and process key
+      //check if key is first char and process key
       if(oldImediate == '0') {
-        //operator check (can't append an operator as first char; special case below for -)
+        //check if char is an operator (can't append an operator as first char; special case below for negative char)
         if([' + ',' * ',' / '].indexOf(key) == -1) {
-          //decimal check
+          //check if char is a decimal
           if(key == '.' || oldImediate[oldImediate.length-1] == '.') {
             //append decimal to leading zero
             d3.select('#imediate').text(oldImediate + key);
           } else {
-            //negative first char check
+            //check if char is a minus sign
             if(key == ' - ') {
               //replace zero with negative char
               d3.select('#imediate').text('-');
@@ -64,9 +64,9 @@ $( document ).keypress(function(e) {
         }
       //otherwise process key as subsequent char
       } else {
-        //non-operator check
+        //check that char is not an operator
         if([' - ',' + ',' * ',' / '].indexOf(key) == -1) {
-          //decimal check
+          //check if char is a decimal
           if(key == '.') {
             //ensure no more than one consecutive decimal and no more than one decimal in a number
             var decimalCheckArr = oldImediate.split(' ');
@@ -76,7 +76,7 @@ $( document ).keypress(function(e) {
             }
           //otherwise append number
           } else {
-            //octal check
+            //check for octal
             if(oldImediate.slice(-2) == ' 0' || oldImediate.slice(-2) == '-0') {
               //overwrite leading zero with number to block octals
               d3.select('#imediate').text(oldImediate.substring(0,oldImediate.length - 1) + key);
@@ -87,13 +87,18 @@ $( document ).keypress(function(e) {
           }
           //check if at least one operator exists before enabling evaluate
           if(oldImediate.search(' ') != -1) {
-            $('#evaluate-btn').prop('disabled', false);
+            //also check that the last char will not be a decimal before enabling evaluate
+            if(key == '.' && oldImediate.slice(-1) == ' ') {
+              $('#evaluate-btn').prop('disabled', true);
+            } else {
+              $('#evaluate-btn').prop('disabled', false);
+            }
           }
         //otherwise operator cases
         } else {
-          //subtraction operator vs negative char cases
+          //check check if char is a minus sign (subtraction operator vs negative char cases)
           if(key == ' - ') {
-            //previous character was operator check
+            //check if previous char was an operator
             if(oldImediate[oldImediate.length-1] != ' ') {
               //append subtraction operator if it won't be the third in a row of if it won't immediately follow an operator
               if(oldImediate != '-' && oldImediate.substring(oldImediate.length - 3) != '- -' && oldImediate.substring(oldImediate.length - 1) != '-') {
@@ -106,7 +111,7 @@ $( document ).keypress(function(e) {
             $('#evaluate-btn').prop('disabled', true);
           //otherwise remaining operator case
           } else {
-            //check that last char was not an operator and not a negative char
+            //check that last char was not an operator or a negative char
             if(oldImediate[oldImediate.length-1] != ' ' && oldImediate.slice(-1) != '-') {
               //append operator normally
               d3.select('#imediate').text(oldImediate + key);
