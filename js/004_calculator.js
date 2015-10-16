@@ -34,7 +34,7 @@ $( document ).keypress(function(e) {
         .append('p')
         .text(oldImediate + ' = ')
           .append('span')
-          .text(parseFloat(eval(oldImediate)));
+          .text(eval(oldImediate));
       d3.select('#history').append('p')
         .text('-------------------------')
         .classed('new-line','true');

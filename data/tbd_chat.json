@@ -1,0 +1,72 @@
+{
+  "responses": [
+    {
+      "category": "positive",
+      "text": "It is certain"
+    },
+    {
+      "category": "positive",
+      "text": "It is decidedly so"
+    },
+    {
+      "category": "positive",
+      "text": "Without a doubt"
+    },
+    {
+      "category": "positive",
+      "text": "Yes, definitely"
+    },
+    {
+      "category": "positive",
+      "text": "As I see it, yes"
+    },
+    {
+      "category": "positive",
+      "text": "Most likely"
+    },
+    {
+      "category": "positive",
+      "text": "Yes"
+    },
+    {
+      "category": "positive",
+      "text": "Signs point to yes"
+    },
+    {
+      "category": "neutral",
+      "text": "Reply hazy try again"
+    },
+    {
+      "category": "neutral",
+      "text": "Ask again later"
+    },
+    {
+      "category": "neutral",
+      "text": "Cannot predict now"
+    },
+    {
+      "category": "neutral",
+      "text": "Concentrate and ask again"
+    },
+    {
+      "category": "negative",
+      "text": "Don't count on it"
+    },
+    {
+      "category": "negative",
+      "text": "My reply is no"
+    },
+    {
+      "category": "My sources say no",
+      "text": "My reply is no"
+    },
+    {
+      "category": "Outlook not so good",
+      "text": "My reply is no"
+    },
+    {
+      "category": "Very doubtful",
+      "text": "My reply is no"
+    }
+  ]
+}
