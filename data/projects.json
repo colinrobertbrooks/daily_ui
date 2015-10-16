@@ -30,7 +30,15 @@
       "date": "October 16, 2015",
       "link": "/daily_ui/004_calculator",
       "image": "004_calculator.jpg",
-      "description": "A simple, functional calculator with basic error handling and equation logging."
+      "description": "A simple, functional calculator with basic error handling and equation logging that accepts both button and keyboard inputs."
+    },
+    {
+      "key": 5,
+      "name": "005: App Icon",
+      "date": "October 19, 2015",
+      "link": "/daily_ui/005_app_icon",
+      "image": "005_app_icon.jpg",
+      "description": "A mobile app icon mockup for PeakBucket, a real life project."
     }
   ]
 }

@@ -1,0 +1,46 @@
+/* body */
+#iphone-svg {
+  height: 400px;
+}
+#icon-container {
+  position: relative;
+  margin-top: -93px;
+}
+.icon {
+  height: 38px;
+}
+.icon-light {
+  opacity: 0.2;
+}
+#pb-icon-container {
+  display: inline-block;
+  margin-left: -8px;
+  cursor: pointer;
+}
+#pb-icon {
+}
+#pb-logo {
+  height: 26px;
+  margin-left: -32px;
+  padding-bottom: 2px;
+}
+
+/* modal */
+.modal-body {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+#icon-container-modal {
+  margin-left: -41px;
+}
+#icon-modal {
+  height: 200px;
+}
+#pb-logo-modal {
+  height: 150px;
+  margin-left: -159px;
+}
+.modal-body p {
+  font-size: 22px;
+  color: #515151;
+}
