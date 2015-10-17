@@ -8,7 +8,7 @@ header {
   margin: 0 auto;
   width: 100%;
   max-width: 600px;
-  border: 1px solid #999;
+  border-top: 1px solid #999;
   border-radius: 6px;
 }
 .chat-window h4 {
@@ -31,6 +31,8 @@ header {
 
 /* message container */
 .message-container {
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -54,14 +56,18 @@ header {
   border-top: 1px solid #999;
 }
 input.form-control {
+  border-bottom: 1px solid #999;
+  border-left: 1px solid #999;
   border-top-left-radius: 0px;
-  border-bottom-left-radius: 6px;
+  border-bottom-left-radius: 4px;
 }
 
 /* message send */
 .input-group-addon {
+  border-bottom: 1px solid #999;
+  border-right: 1px solid #999;
   border-top-right-radius: 0px;
-  border-bottom-right-radius: 6px;
+  border-bottom-right-radius: 4px;
 }
 #message-send {
   cursor: pointer;

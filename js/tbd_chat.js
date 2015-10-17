@@ -116,7 +116,7 @@ function resizeChat () {
   var chatInputHeight = $('.message-input').height();
   if(screenHeight > 320) {
     //size to current screen
-    var buffer = 120;
+    var buffer = 100;
     var chatWindowHeight = screenHeight - buffer;
     $('.chat-window').height(chatWindowHeight);
     $('.message-container').height(chatWindowHeight - (chatHeaderHeight + chatInputHeight + 22));
