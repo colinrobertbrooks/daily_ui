@@ -1,11 +1,10 @@
 //react
 var Message = React.createClass({
   render: function() {
-    var messageTime = longTextDateTime(new Date())
     return (
       <div className={this.props.id == 'eight-ball' ? ('message eight-ball-message ' + this.props.bg) : 'message user-message' }>
         <p className='message-text'>{this.props.text}</p>
-        <p className='message-date'><b>{this.props.name}</b> {messageTime}</p>
+        <p className='message-date'><b>{this.props.name}</b> {this.props.time}</p>
       </div>
     );
   }
@@ -26,7 +25,7 @@ var ChatWindow = React.createClass({
   render: function() {
     var messageNodes = this.props.messages.map(function(message, index) {
       return (
-        <Message key={index} id={message.id} name={message.name} text={message.text} bg={message.bg_color} />
+        <Message key={index} id={message.id} name={message.name} text={message.text} time={message.time} bg={message.bg_color} />
       );
     });
     return (
@@ -66,7 +65,7 @@ var App = React.createClass({
       success: function(data) {
         this.setState({
           eightBallResponses: data.responses,
-          messages: [{id: "eight-ball", name: "Magic Eight Ball", text: "Hello, I'm Magic 8 Ball. Please ask me yes/no questions...", bg_color: ''}]
+          messages: [{id: "eight-ball", name: "Magic Eight Ball", text: "Hello, I'm Magic 8 Ball. Please ask me yes/no questions...", time: returnMessageTime(), bg_color: ''}]
         });
       }.bind(this)
     });
@@ -77,8 +76,8 @@ var App = React.createClass({
     var eightBallResponse = _.sample(this.state.eightBallResponses);
     if(userMessage.length > 0) {
       messages.push(
-        {id: "user", name: "You", text: userMessage, bg_color: '' },
-        {id: "eight-ball", name: "Magic Eight Ball", text: eightBallResponse.text, bg_color: eightBallResponse.bg_class}
+        {id: "user", name: "You", text: userMessage, time: returnMessageTime(), bg_color: '' },
+        {id: "eight-ball", name: "Magic Eight Ball", text: eightBallResponse.text, time:returnMessageTime(), bg_color: eightBallResponse.bg_class}
       );
       this.setState({
         messages: messages
@@ -124,12 +123,16 @@ function resizeChat () {
   } else {
     //default to xs screen
     $('.chat-window').height(220);
-    $('.message-container').height(145);
+    $('.message-container').height(139);
   }
   //scroll message container to bottom
   $('.message-container').animate({scrollTop: $('.message-container')[0].scrollHeight}, 0);
 }
 
 
-//formatters
-var longTextDateTime = d3.time.format('%A, %B %d, %Y %I:%M');
+//message time
+function returnMessageTime () {
+  var longTextDateTime = d3.time.format('%A, %B %d, %Y %I:%M:%S');
+  var messageTime = longTextDateTime(new Date());
+  return messageTime;
+}
