@@ -3,9 +3,9 @@ var Message = React.createClass({
   render: function() {
     var messageTime = longTextDateTime(new Date())
     return (
-      <div className={this.props.from == 'eight-ball' ? ('message eight-ball-message ' + this.props.bg) : 'message user-message' }>
-        <p className="message-text">{this.props.text}</p>
-        <p className="message-date"><b>{this.props.name}</b> {messageTime}</p>
+      <div className={this.props.id == 'eight-ball' ? ('message eight-ball-message ' + this.props.bg) : 'message user-message' }>
+        <p className='message-text'>{this.props.text}</p>
+        <p className='message-date'><b>{this.props.name}</b> {messageTime}</p>
       </div>
     );
   }
@@ -26,20 +26,23 @@ var ChatWindow = React.createClass({
   render: function() {
     var messageNodes = this.props.messages.map(function(message, index) {
       return (
-        <Message key={index} from={message.from} name={message.name} text={message.text} bg={message.bg_color} />
+        <Message key={index} id={message.id} name={message.name} text={message.text} bg={message.bg_color} />
       );
     });
     return (
-      <div className="row">
-        <div className="col-md-12">
-          <div className="chat-window">
-            <h4 className="text-center">Chat with <b>Magic 8 Ball</b></h4>
-            <div className="message-container">
+      <div className='row'>
+        <div className='col-md-12'>
+          <div className='chat-window'>
+            <h4 className='text-center'>
+              <img src="img/tbd_chat/eight-ball.svg" alt="Magic 8 Ball"></img>
+              Chat with <b>Magic 8 Ball</b>
+            </h4>
+            <div className='message-container'>
               {messageNodes}
             </div>
-            <div className="input-group message-input">
-              <input type="text" className="form-control" id="user-input" placeholder="Type your question for Magic 8 Ball..." aria-describedby="message-send" onKeyPress={this.props.enterKeyInput} ></input>
-              <span className="input-group-addon" id="message-send" title="Send your question to Magic 8 Ball" onClick={this.props.messageSend}><i className="fa fa-question"></i></span>
+            <div className='input-group message-input'>
+              <input type='text' className='form-control' id='user-input' placeholder='Type your question for Magic 8 Ball...' aria-describedby='message-send' onKeyPress={this.props.enterKeyInput} ></input>
+              <span className='input-group-addon' id='message-send' title='Send your question' onClick={this.props.messageSend}><i className='fa fa-question'></i></span>
             </div>
           </div>
         </div>
@@ -62,7 +65,8 @@ var App = React.createClass({
       cache: false,
       success: function(data) {
         this.setState({
-          eightBallResponses: data.responses
+          eightBallResponses: data.responses,
+          messages: [{id: "eight-ball", name: "Magic Eight Ball", text: "Hello, I'm Magic 8 Ball. Please ask me yes/no questions...", bg_color: ''}]
         });
       }.bind(this)
     });
@@ -73,8 +77,8 @@ var App = React.createClass({
     var eightBallResponse = _.sample(this.state.eightBallResponses);
     if(userMessage.length > 0) {
       messages.push(
-        {from: "user", name: "You", text: userMessage, bg_color: '' },
-        {from: "eight-ball", name: "Magic Eight Ball", text: eightBallResponse.text, bg_color: eightBallResponse.bg_class}
+        {id: "user", name: "You", text: userMessage, bg_color: '' },
+        {id: "eight-ball", name: "Magic Eight Ball", text: eightBallResponse.text, bg_color: eightBallResponse.bg_class}
       );
       this.setState({
         messages: messages
@@ -102,7 +106,7 @@ ReactDOM.render(
 );
 
 
-//window resize funcitons
+//resize
 $( window ).resize(function() {
   resizeChat();
 });
@@ -128,4 +132,4 @@ function resizeChat () {
 
 
 //formatters
-var longTextDateTime = d3.time.format("%A, %B %d, %Y %I:%M");
+var longTextDateTime = d3.time.format('%A, %B %d, %Y %I:%M');

@@ -20,8 +20,16 @@ header {
   border-radius: 4px 4px 0px 0px;
   border-bottom: 1px solid #999;
 }
+.chat-window img {
+  margin-top: -2px;
+  margin-bottom: 2px;
+  margin-right: 6px;
+  max-height: 25px;
+  background-color: white;
+  border-radius: 50px
+}
 
-/* message window */
+/* message container */
 .message-container {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -62,7 +70,7 @@ input.form-control {
   background-color: #E5E5E5;
 }
 
-/* messages */
+/* message */
 .message{
   width: 88%;
   border-radius: 5px;
@@ -99,6 +107,11 @@ input.form-control {
   text-align: left;
   float: left;
   margin: 10px 50px 10px 25px;
+}
+.eight-ball-message::before {
+  box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+  left: -9px;
+  background-color: #fff;
 }
 .eight-ball-message.bg-success::before {
   box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
