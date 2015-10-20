@@ -30,7 +30,7 @@
       "date": "October 16, 2015",
       "link": "/daily_ui/004_calculator",
       "image": "004_calculator.jpg",
-      "description": "A simple, functional calculator with basic error handling and equation logging that accepts both button and keyboard inputs."
+      "description": "A simple, functional calculator using JavaScript's eval() function with basic error handling and equation logging that accepts both button and keyboard inputs."
     },
     {
       "key": 5,
@@ -39,6 +39,14 @@
       "link": "/daily_ui/005_app_icon",
       "image": "005_app_icon.jpg",
       "description": "A mobile app icon mockup for PeakBucket, a real life project."
+    },
+    {
+      "key": 6,
+      "name": "006: User Profile",
+      "date": "October 20, 2015",
+      "link": "/daily_ui/006_user_profile",
+      "image": "006_user_profile.jpg",
+      "description": "What I think my dog's user profile would look like if dogs used social media. Responsive layout. Used Underscore.js and d3.js to generate random post content."
     }
   ]
 }

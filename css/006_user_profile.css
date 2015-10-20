@@ -1,0 +1,100 @@
+/* navbar */
+.navbar {
+  margin-bottom: 25px;
+}
+.navbar-header{
+  margin-top: 5px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 26px;
+  color: #A5D416;
+}
+.navbar-header img{
+  margin-top: -6px;
+  max-height: 30px;
+}
+@media only screen and (max-width: 768px)  {
+    .navbar-header img {
+      margin-left: 6px;
+    }
+  }
+
+/* user top */
+.user-photo {
+  height: 125px;
+  width: 125px;
+  border: 1px solid #E7E7E7;
+  border-radius: 62px;
+}
+.user-breed {
+  font-style: italic;
+  color: #666;
+}
+
+/* friends */
+#friends-container h3 {
+  font-family: 'Oswald', sans-serif;
+  color: #A5D416;
+}
+#friends {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  border: 1px solid #E7E7E7;
+  border-radius: 4px;
+}
+.friend-photo {
+  margin-top: 15px;
+  border-radius: 4px;
+  border: 1px solid #CBF637;
+}
+
+/* posts */
+#posts-continer h3 {
+  font-family: 'Oswald', sans-serif;
+  color: #A5D416;
+}
+#posts {
+  margin: 1px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border: 1px solid #E7E7E7;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+.post-container {
+  border-radius: 4px;
+  border: 1px solid #CBF637;
+  margin-bottom: 10px;
+}
+.post-header {
+  padding: 10px 10px 5px 10px;
+  background-color: rgb(248, 248, 248);
+  border-bottom: 1px solid #E7E7E7;
+}
+.user-thumbnail {
+  display: inline;
+  max-height: 30px;
+  border-radius: 15px;
+  border: 1px solid #E7E7E7;
+}
+.post-header h4 {
+  display: inline;
+  vertical-align: -2px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 3px;
+}
+.post-body {
+  padding: 10px 10px 5px 10px;
+}
+.post-body p {
+  margin-left: 3px;
+  margin-bottom: 3px;
+  font-size: 17px;
+}
+.post-body small {
+  margin-left: 3px;
+  color: #666;
+  font-style: italic;
+}

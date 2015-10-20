@@ -10,16 +10,16 @@
 }
 .social-links a {
   margin-top: 15px;
-  margin-left: 2px;
-  margin-right: 2px;
-  font-size: 18px;
+  margin-left: 3px;
+  margin-right: 3px;
+  font-size: 24px;
   color: #8e8e8e;
 }
 #website-link:hover {
-  color: #333;
+  color: #000;
 }
 #github-link:hover {
-  color: #333;
+  color: #323131;
 }
 #linkedin-link:hover {
   color: #0077B5;

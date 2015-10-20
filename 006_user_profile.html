@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>006: User Profile | Daily UI</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/006_user_profile.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <header class="row text-center">
+        <div class="col-md-12">
+          <h1>006: User Profile</h1>
+        </div>
+      </header>
+
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <img alt="Tennis Ball" src="img/006_user_profile/tennis_ball.png" class="brand-logo">
+            fetchbook
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <!-- top -->
+        <div class="row">
+          <!-- desktop view -->
+          <div class="hidden-xs hidden-sm col-md-2 text-right">
+            <div>
+              <img alt="Ellie" src="img/006_user_profile/ellie.jpg" class="user-photo">
+            </div>
+          </div>
+          <div class="hidden-xs hidden-sm col-md-10 text-left">
+            <div class="row">
+              <div class="col-md-12">
+                <h1>Ellie</h1>
+                <p class="user-breed">Labrador Retriever</p>
+              </div>
+            </div>
+          </div>
+          <div class="hidden-xs hidden-sm col-md-12">
+            <hr>
+          </div>
+          <!-- mobile view -->
+          <div class="col-xs-12 col-sm-12 hidden-md hidden-lg text-center">
+            <img alt="Ellie" src="img/006_user_profile/ellie.jpg" class="user-photo">
+          </div>
+          <div class="col-xs-12 col-sm-12 hidden-md hidden-lg text-center">
+            <h1>Ellie</h1>
+          </div>
+          <div class="col-xs-12 col-sm-12 hidden-md hidden-lg text-center">
+            <p class="user-breed">Labrador Retriever</p>
+          </div>
+        </div>
+        <!-- friends and comments -->
+        <div class="row text-center">
+          <div id="friends-container" class="col-md-4">
+            <h3>Friends</h3>
+            <div id="friends" class="row">
+              <div class="col-xs-6 col-sm-3 col-md-6">
+                <img alt="Emma" src="img/006_user_profile/emma.jpg" class="friend-photo img-responsive" title="Emma (Ellie's mom)">
+              </div>
+              <div class="col-xs-6 col-sm-3 col-md-6">
+                <img alt="Connor" src="img/006_user_profile/connor.jpg" class="friend-photo img-responsive" title="Connor(Ellie's dad)">
+              </div>
+              <div class="col-xs-6 col-sm-3 col-md-6">
+                <img alt="Jack" src="img/006_user_profile/jack.jpg" class="friend-photo img-responsive" title="Jack">
+              </div>
+              <div class="col-xs-6 col-sm-3 col-md-6">
+                <img alt="Ellie" src="img/006_user_profile/odelle.jpg" class="friend-photo img-responsive" title="Odelle">
+              </div>
+            </div>
+          </div>
+          <div id="posts-continer" class="col-md-8">
+            <h3>Recent Posts</h3>
+            <div id="posts" class="row text-left">
+              <!-- posts -->
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="row text-center">
+        <div class="col-md-12">
+          <hr>
+          <p>
+            <small>October 20, 2015</small>
+          </p>
+          <a href="/daily_ui/">Back to Daily UI Index</a>
+        </div>
+      </footer>
+
+    </div>
+
+    <script src="js/lib/jquery-2.1.1.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/d3.min.js"></script>
+    <script src="js/lib/underscore.min.js"></script>
+    <script src="js/006_user_profile.js"></script>
+  </body>
+</html>
