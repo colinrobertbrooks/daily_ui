@@ -47,6 +47,15 @@
       "link": "/daily_ui/006_user_profile",
       "image": "006_user_profile.jpg",
       "description": "What I think my dog's user profile would look like if dogs used social media. Responsive layout. Used Underscore.js and d3.js to generate random post content."
+    },
+    {
+      "key": 7,
+      "name": "007: Settings",
+      "date": "October 21, 2015",
+      "link": "/daily_ui/007_settings",
+      "image": "007_settings.jpg",
+      "description": "Style user supplied text using React and jQuery UI Slider."
     }
   ]
 }
+

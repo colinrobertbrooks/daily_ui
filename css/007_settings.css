@@ -1,0 +1,56 @@
+/* user input */
+#user-input-submit {
+  cursor: pointer;
+}
+#user-input-submit:hover {
+  background-color: #E5E5E5;
+}
+
+/* style this */
+#style-this-container {
+  margin-bottom: 10px;
+  height:100px;
+  width: 100%;
+  display: table;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+#style-this {
+  text-align:center;
+  vertical-align: middle;
+  display: table-cell;
+  font-weight: bold;
+}
+
+/* style controls */
+#style-controls h3,
+#style-controls hr {
+  margin-bottom: 0px;
+}
+#style-controls p {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* sliders */
+.slider {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.color-slider {
+  margin-bottom: 25px;
+}
+#font-red-slider .ui-slider-handle {
+  border-color: #ef2929;
+}
+#font-green-slider .ui-slider-handle {
+  border-color: #8ae234;
+}
+#font-blue-slider .ui-slider-handle {
+  border-color: #729fcf;
+}
+
+/* reset button */
+#reset-btn {
+  margin-top: 10px;
+}

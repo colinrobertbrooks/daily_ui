@@ -25,6 +25,11 @@
   padding-bottom: 2px;
 }
 
+/* footer */
+footer {
+  margin-top: 90px;
+}
+
 /* modal */
 .modal-body {
   padding-top: 60px;
