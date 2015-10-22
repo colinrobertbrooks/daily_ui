@@ -55,6 +55,14 @@
       "link": "/daily_ui/007_settings",
       "image": "007_settings.jpg",
       "description": "Controls to style user supplied text using React and jQuery UI Slider."
+    },
+    {
+      "key": 8,
+      "name": "008: 404 Page",
+      "date": "October 22, 2015",
+      "link": "/daily_ui/008_404_page",
+      "image": "008_404_page.jpg",
+      "description": "A launch-themed 404 page with typed animation."
     }
   ]
 }

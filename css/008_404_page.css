@@ -1,0 +1,66 @@
+/* cover photo */
+/* NASA/Joel Kowsky, October 28, 2014 */
+body#background {
+  background: url('../img/008_404/failure_to_launch.jpg') no-repeat top center fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-color: rgba(22, 18, 17, 0.5);
+}
+
+/* text */
+#text-container {
+  font-family: 'consolas', sans-serif;
+  color: white;
+  text-shadow: rgb(22, 18, 17) 1px 1px 1px;
+}
+#text-container h1 {
+  font-weight: bolder;
+  font-size: 120px;
+  margin-bottom: 0px;
+}
+#text-container h2 {
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+#text-container h3 {
+  margin-bottom: 30px;
+}
+#text-container a,
+#text-container a:hover {
+  color: #c0c0c0;
+}
+@media only screen and (max-width: 480px)  {
+  #text-container h3 {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    min-height: 54px;
+  }
+
+}
+
+/* typed */
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes blink {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes blink {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
