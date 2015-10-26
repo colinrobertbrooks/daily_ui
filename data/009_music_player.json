@@ -1,0 +1,129 @@
+{
+  "keys": [
+    {
+      "data": "C",
+      "sharp": false,
+      "frequency": 261.6255653005986
+    },
+    {
+      "data": "C#",
+      "sharp": true,
+      "frequency": 277.1826309768721
+    },
+    {
+      "data": "D",
+      "sharp": false,
+      "frequency": 293.6647679174076
+    },
+    {
+      "data": "D#",
+      "sharp": true,
+      "frequency": 311.12698372208087
+    },
+    {
+      "data": "E",
+      "sharp": false,
+      "frequency": 329.6275569128699
+    },
+    {
+      "data": "F",
+      "sharp": false,
+      "frequency": 349.2282314330039
+    },
+    {
+      "data": "F#",
+      "sharp": true,
+      "frequency": 369.9944227116344
+    },
+    {
+      "data": "G",
+      "sharp": false,
+      "frequency": 391.99543598174927
+    },
+    {
+      "data": "G#",
+      "sharp": true,
+      "frequency": 415.3046975799451
+    },
+    {
+      "data": "A",
+      "sharp": false,
+      "frequency": 440
+    },
+    {
+      "data": "A#",
+      "sharp": true,
+      "frequency": 466.1637615180899
+    },
+    {
+      "data": "B",
+      "sharp": false,
+      "frequency": 493.8833012561241
+    },
+    {
+      "data": "C",
+      "sharp": false,
+      "frequency": 523.2511306011972
+    },
+    {
+      "data": "C#",
+      "sharp": true,
+      "frequency": 554.3652619537442
+    },
+    {
+      "data": "D",
+      "sharp": false,
+      "frequency": 587.3295358348151
+    },
+    {
+      "data": "D#",
+      "sharp": true,
+      "frequency": 622.2539674441618
+    },
+    {
+      "data": "E",
+      "sharp": false,
+      "frequency": 659.2551138257398
+    },
+    {
+      "data": "F",
+      "sharp": false,
+      "frequency": 698.4564628660078
+    },
+    {
+      "data": "F#",
+      "sharp": true,
+      "frequency": 739.9888454232688
+    },
+    {
+      "data": "G",
+      "sharp": false,
+      "frequency": 783.9908719634985
+    },
+    {
+      "data": "G#",
+      "sharp": true,
+      "frequency": 830.6093951598903
+    },
+    {
+      "data": "A",
+      "sharp": false,
+      "frequency": 880
+    },
+    {
+      "data": "A#",
+      "sharp": true,
+      "frequency": 932.3275230361799
+    },
+    {
+      "data": "B",
+      "sharp": false,
+      "frequency": 987.7666025122483
+    },
+    {
+      "data": "C",
+      "sharp": false,
+      "frequency": 1046.5022612023945
+    }
+  ]
+}

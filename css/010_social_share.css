@@ -1,0 +1,136 @@
+/* global */
+a,
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;
+}
+
+
+/* top */
+.screen-size-subtitle {
+  margin-top: 10px;
+  color: #999;
+  font-size: 15px;
+  font-style: italic;
+}
+.screen-size-subtitle i {
+  display: block;
+  font-size: 20px;
+}
+
+
+/* share small screens (default) */
+#share-container {
+  margin: 0 auto;
+  border: 1px solid #333;;
+  border-radius: 5px;
+  height: 110px;
+  width: 200px;
+  background-color: #f5f6fa;
+}
+#share-icons-container {
+  margin-left: -10px;
+}
+#share-header {
+  margin-bottom: 22px;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #333;
+  border-bottom: 1px solid #333;;
+}
+#share-header h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #f5f6fa;
+  font-size: 22px;
+}
+.fa-stack {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.share-btn {
+  font-size: 46px;
+}
+.share-btn-white-bg {
+  color: white;
+  font-size: 44px;
+  top: -7px;
+}
+
+/* share medium screens */
+@media only screen and (min-width: 992px)  {
+  #share-container {
+    height: 85px;
+    width: 175px;
+  }
+  #share-header {
+    margin-bottom: 13px;
+  }
+  #share-header h4 {
+    font-size: 18px;
+  }
+  #share-icons-container {
+    margin-left: -4px;
+  }
+  .fa-stack {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .share-btn {
+    font-size: 34px;
+  }
+  .share-btn-white-bg {
+    font-size: 32px;
+    top: -3px;
+  }
+}
+
+/* share large screens */
+@media only screen and (min-width: 1200px)  {
+  #share-container {
+    height: 82px;
+    width: 155px;
+  }
+   #share-header {
+    margin-bottom: 11px;
+  }
+  #share-icons-container {
+    margin-left: -2px;
+  }
+  .fa-stack {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  .share-btn {
+    font-size: 30px;
+  }
+  .share-btn-white-bg {
+    font-size: 29px;
+    top: 0px;
+    padding-left: 1px;
+  }
+}
+
+
+/* brand colors */
+.facebook-logo{
+  color: rgba(59,89,152,0.8);
+}
+.facebook-logo:hover{
+  color: rgba(59,89,152,1);
+}
+.twitter-logo{
+  color: rgba(0,172,237,0.8);
+}
+.twitter-logo:hover{
+  color: rgba(0,172,237,1);
+}
+.google-plus-logo{
+  color: rgba(221,75,57,0.8);
+}
+.google-plus-logo:hover{
+  color: rgba(221,75,57,1);
+}

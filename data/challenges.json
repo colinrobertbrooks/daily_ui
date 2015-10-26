@@ -63,6 +63,22 @@
       "link": "/daily_ui/008_404_page",
       "image": "008_404_page.jpg",
       "description": "A launch-themed 404 page with typed animation."
+    },
+    {
+      "key": 9,
+      "name": "009: Music Player",
+      "date": "October 23, 2015",
+      "link": "/daily_ui/009_music_player",
+      "image": "009_music_player.jpg",
+      "description": "A functional, responsive piano built with d3.js."
+    },
+    {
+      "key": 10,
+      "name": "010: Social Share",
+      "date": "October 26, 2015",
+      "link": "/daily_ui/010_social_share",
+      "image": "010_social_share.jpg",
+      "description": "A set of functional, responsive social share buttons that resize to fit three screen sizes and share the current page."
     }
   ]
 }

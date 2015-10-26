@@ -1,0 +1,29 @@
+/* white keys */
+.white-key {
+  stroke-width: 1.5px;
+  transition: fill 250ms linear, stroke 250ms linear;
+  transition-delay: 150ms;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  fill: #fff;
+  stroke: #777;
+}
+.white-key:hover {
+  transition-delay: 0;
+  fill: #dcdde1;
+}
+
+/* black keys */
+.black-key {
+  stroke-width: 1.5px;
+  transition: fill 100ms linear, stroke 250ms linear;
+  transition-delay: 50ms;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  fill: #282828;
+  stroke: #333;
+}
+.black-key:hover {
+  transition-delay: 0;
+  fill: #000;
+}
