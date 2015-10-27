@@ -62,7 +62,7 @@ function flashResult(computer, user) {
     $('#status-container').addClass('bg-danger');
     $('.modal-title').addClass('text-danger');
     $('.modal-title i').addClass('fa fa-times');
-    $('.modal-title span').text('Your Guess Was Inorrect');
+    $('.modal-title span').text('Your Guess Was Incorrect');
   }
   $('#computer-result').text(resultText);
   $('#flash-modal').modal('show');

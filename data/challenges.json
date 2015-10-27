@@ -79,6 +79,14 @@
       "link": "/daily_ui/010_social_share",
       "image": "010_social_share.jpg",
       "description": "A set of functional, responsive social share buttons that resize to fit three screen sizes and share the current page."
+    },
+    {
+      "key": 11,
+      "name": "011: Flash Message",
+      "date": "October 27, 2015",
+      "link": "/daily_ui/011_flash_message",
+      "image": "011_flash_message.jpg",
+      "description": "Success/Error message received after guessing a random number between 1 and 10."
     }
   ]
 }
