@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>011: Flash Message | Daily UI</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/011_flash_message.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <header class="row text-center">
+        <div class="col-md-12">
+          <h1>011: Flash Message</h1>
+          <hr>
+        </div>
+      </header>
+
+      <main>
+        <div class="row text-center">
+          <div class="col-md-12">
+            <p><span id="computer-prompt"></span></p>
+          </div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <div id="user-selection-container">
+              <select id="user-selection" class="form-control">
+                <option value="select">Select a Number</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+            <button type="button" id="reset-btn" class="btn btn-default" onclick="resetGame()">Guess Again</button>
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+      </main>
+
+      <footer class="row text-center">
+        <div class="col-md-12">
+          <hr>
+          <p>
+            <small>October 27, 2015</small>
+          </p>
+          <a href="/daily_ui/">Back to Daily UI Index</a>
+        </div>
+      </footer>
+
+      <!-- flash modal -->
+      <div id="flash-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <div id="status-container">
+                <h4 class="modal-title">
+                  <i></i>
+                  <span></span>
+                </h4>
+              </div>
+            </div>
+            <div class="modal-body">
+              <p id="computer-result"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-default" onclick="resetGame()">Guess Again</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+    <script src="js/lib/jquery-2.1.1.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/d3.min.js"></script>
+    <script src="js/lib/underscore.min.js"></script>
+    <script src="js/lib/typed.min.js"></script>
+    <script src="js/011_flash_message.js"></script>
+  </body>
+</html>
