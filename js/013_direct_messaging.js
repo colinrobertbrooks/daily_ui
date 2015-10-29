@@ -33,7 +33,7 @@ var ChatWindow = React.createClass({
         <div className='col-md-12'>
           <div className='chat-window'>
             <h4 className='text-center'>
-              <img src="img/tbd_chat/eight-ball.svg" alt="Magic 8 Ball"></img>
+              <img src="img/013_direct_messaging/eight-ball.svg" alt="Magic 8 Ball"></img>
               Chat with <b>Magic 8 Ball</b>
             </h4>
             <div className='message-container'>
@@ -59,7 +59,7 @@ var App = React.createClass({
   },
   loadEightBallResponses: function () {
     $.ajax({
-      url: 'data/tbd_chat.json',
+      url: 'data/013_direct_messaging.json',
       dataType: 'json',
       cache: false,
       success: function(data) {

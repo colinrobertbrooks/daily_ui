@@ -54,7 +54,7 @@
       "date": "October 21, 2015",
       "link": "/daily_ui/007_settings",
       "image": "007_settings.jpg",
-      "description": "Controls to style user supplied text using React and jQuery UI Slider."
+      "description": "Controls to style user supplied text using React.js and jQuery UI Slider."
     },
     {
       "key": 8,
@@ -95,6 +95,14 @@
       "link": "/daily_ui/012_ecommerce_shop",
       "image": "012_ecommerce_shop.jpg",
       "description": "A responsive ecommerce shop for spinning widgets, including color selection, description and reviews."
+    },
+    {
+      "key": 13,
+      "name": "013: Direct Messaging",
+      "date": "October 29, 2015",
+      "link": "/daily_ui/013_direct_messaging",
+      "image": "013_direct_messaging.jpg",
+      "description": "Direct message with a magic 8 ball. Built with React.js; responses driven by Underscore.js."
     }
   ]
 }
