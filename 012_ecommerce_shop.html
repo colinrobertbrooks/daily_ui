@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>012: Ecommerce Shop | Daily UI</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/012_ecommerce_shop.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <header class="row text-center">
+        <div class="col-md-12">
+          <h1>012: Ecommerce Shop</h1>
+          <hr>
+        </div>
+      </header>
+
+      <main>
+        <div class="row text-center">
+          <div class="col-md-5">
+            <div id="widget-container">
+              <i class="fa fa-cog fa-spin"></i>
+            </div>
+            <small id="color-header">Pick a color:</small>
+            <div id="color-square-container">
+              <div id="color-black" class="color-square color-selected" title="black"></div>
+              <div id="color-grey" class="color-square" title="grey"></div>
+              <div id="color-red" class="color-square" title="red"></div>
+              <div id="color-orange" class="color-square" title="orange"></div>
+              <div id="color-yellow" class="color-square" title="yellow"></div>
+              <div id="color-green" class="color-square" title="green"></div>
+              <div id="color-blue" class="color-square" title="blue"></div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h2>Spinning Widget</h2>
+            <h2 id="price"><small>$0.99</small></h2>
+            <button type="button" id="buy-btn" class="btn btn-primary btn-md">Buy Now</button>
+            <ul class="nav nav-tabs">
+              <li id="description-tab" class="product-tab active"><a href="javascript:void(0)">Description</a></li>
+              <li id="reviews-tab" class="product-tab"><a href="javascript:void(0)">Reviews</a></li>
+            </ul>
+            <div id="description-content" class="tab-content text-left">
+              <p>The spinning widget is by far our most popular product. Customers <i>love</i> our spinning widget and we love it too.</p>
+            </div>
+            <div id="reviews-content" class="tab-content">
+              <p>"I love the spinning widget!"</p>
+              <p>- Random Customer</p>
+              <div>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <hr>
+              <p>"I also love the spinning widget!"</p>
+              <p>- Another Random Customer</p>
+              <div>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="row text-center">
+        <div class="col-md-12">
+          <hr>
+          <p>
+            <small>October 28, 2015</small>
+          </p>
+          <a href="/daily_ui/">Back to Daily UI Index</a>
+        </div>
+      </footer>
+
+    </div>
+
+    <script src="js/lib/jquery-2.1.1.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/012_ecommerce_shop.js"></script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+/* global */
+html {
+  overflow-y: scroll;
+}
+
+/* title */
+#price {
+  font-style: italic;
+  margin-top: -7px;
+}
+#buy-btn {
+  margin-bottom: 10px;
+}
+
+/* widget container */
+#widget-container {
+  margin-bottom: 10px;
+  padding: 50px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 125px;
+}
+.fa-cog {
+  color: black;
+}
+
+
+/* widget color */
+#color-header  {
+  font-weight: bold;
+}
+#color-square-container {
+  margin-top: 10px;
+}
+.color-square {
+  display: inline-block;
+  margin-left: 2px;
+  margin-right: 2px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+
+}
+.color-selected {
+  border: 1px solid black;
+}
+#color-black {
+  background-color: black;
+}
+#color-grey {
+  background-color: grey;
+}
+#color-red {
+  background-color: red;
+}
+#color-orange {
+  background-color: orange;
+}
+#color-yellow {
+  background-color: yellow;
+}
+#color-green {
+  background-color: green;
+}
+#color-blue {
+  background-color: blue;
+}
+
+/* tabs */
+.tab-content {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+
+}
+#description-content {
+  padding: 17px;
+}
+#description-content p {
+  font-size: 17px;
+}
+#reviews-content {
+  display: none;
+  padding: 15px;
+}
+#reviews-content p {
+  font-size: 16px;
+}
+.fa-star {
+  color: #ffba03;
+}

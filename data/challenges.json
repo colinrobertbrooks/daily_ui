@@ -87,7 +87,14 @@
       "link": "/daily_ui/011_flash_message",
       "image": "011_flash_message.jpg",
       "description": "Success/Error message received after guessing a random number between 1 and 10."
+    },
+    {
+      "key": 12,
+      "name": "012: Ecommerce Shop",
+      "date": "October 28, 2015",
+      "link": "/daily_ui/012_ecommerce_shop",
+      "image": "012_ecommerce_shop.jpg",
+      "description": "A responsive ecommerce shop for spinning widgets, including color selection, description and reviews."
     }
   ]
 }
-

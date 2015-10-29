@@ -40,7 +40,7 @@ function flashResult(computer, user) {
   //determine result
   var result;
   var resultText;
-  if(+computer == + user){
+  if(+computer == +user){
     result = 'correct';
     resultText = "That's right! I was thinking of " + computer + '.';
   } else {
@@ -52,8 +52,8 @@ function flashResult(computer, user) {
   $('.modal-title').removeClass('text-success text-danger');
   $('.modal-title i').removeClass('fa fa-check fa-times');
   $('.modal-title span').text('');
-  //set modal
-  if(+computer == + user){
+  //set modal based on result
+  if(result == 'correct'){
     $('#status-container').addClass('bg-success');
     $('.modal-title').addClass('text-success');
     $('.modal-title i').addClass('fa fa-check');
