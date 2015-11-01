@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>014: Countdown Timer | Daily UI</title>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib/animate.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/014_countdown_timer.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <header class="row text-center">
+        <div class="col-md-12">
+          <h1>014: Countdown Timer</h1>
+          <hr>
+        </div>
+      </header>
+
+      <main>
+        <div class="row text-center">
+          <div id="select" class="col-md-12">
+            <form class="form-inline" role="form" onsubmit="event.preventDefault()">
+              <div class="form-group">
+                <select id="minutes-selection" class="form-control">
+                  <option value="0">minutes</option>
+                  <option value="0">00</option>
+                  <option value="1">01</option>
+                  <option value="2">02</option>
+                  <option value="3">03</option>
+                  <option value="4">04</option>
+                  <option value="5">05</option>
+                  <option value="6">06</option>
+                  <option value="7">07</option>
+                  <option value="8">08</option>
+                  <option value="9">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                </select>
+                <span id="timer-colon">:</span>
+                <select id="seconds-selection" class="form-control">
+                  <option value="0">seconds</option>
+                  <option value="0">00</option>
+                  <option value="1">01</option>
+                  <option value="2">02</option>
+                  <option value="3">03</option>
+                  <option value="4">04</option>
+                  <option value="5">05</option>
+                  <option value="6">06</option>
+                  <option value="7">07</option>
+                  <option value="8">08</option>
+                  <option value="9">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                  <option value="32">32</option>
+                  <option value="33">33</option>
+                  <option value="34">34</option>
+                  <option value="35">35</option>
+                  <option value="36">36</option>
+                  <option value="37">37</option>
+                  <option value="38">38</option>
+                  <option value="39">39</option>
+                  <option value="40">40</option>
+                  <option value="41">41</option>
+                  <option value="42">42</option>
+                  <option value="43">43</option>
+                  <option value="44">44</option>
+                  <option value="45">45</option>
+                  <option value="46">46</option>
+                  <option value="47">47</option>
+                  <option value="48">48</option>
+                  <option value="49">49</option>
+                  <option value="50">50</option>
+                  <option value="51">51</option>
+                  <option value="52">52</option>
+                  <option value="53">53</option>
+                  <option value="54">54</option>
+                  <option value="55">55</option>
+                  <option value="56">56</option>
+                  <option value="57">57</option>
+                  <option value="58">58</option>
+                  <option value="59">59</option>
+                </select>
+                <button type="submit" id="timer-start" class="btn btn-success" onclick="startTimer()">Start</button>
+              </div>
+            </form>
+          </div>
+          <div id="timer" class="col-md-12">
+            <div id="countdown"></div>
+          </div>
+          <div id="reset" class="col-md-12">
+            <button type="button" id="timer-reset" class="btn btn-default" onclick="resetTimer()">Reset</button>
+          </div>
+        </div>
+      </main>
+
+      <footer class="row text-center">
+        <div class="col-md-12">
+          <hr>
+          <p>
+            <small>October 30, 2015</small>
+          </p>
+          <a href="/daily_ui/">Back to Daily UI Index</a>
+        </div>
+      </footer>
+
+    </div>
+
+    <script src="js/lib/jquery-2.1.1.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/d3.min.js"></script>
+    <script src="js/lib/alert.js"></script>
+    <script src="js/014_countdown_timer.js"></script>
+  </body>
+</html>
