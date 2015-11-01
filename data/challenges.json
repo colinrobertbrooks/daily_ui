@@ -103,6 +103,14 @@
       "link": "/daily_ui/013_direct_messaging",
       "image": "013_direct_messaging.jpg",
       "description": "Direct message with a magic 8 ball. Built with React.js; responses driven by Underscore.js."
+    },
+    {
+      "key": 13,
+      "name": "014 Countdown Timer",
+      "date": "October 30, 2015",
+      "link": "/daily_ui/014_countdown_timer",
+      "image": "014_countdown_timer.jpg",
+      "description": "Functional minutes and seconds countdown timer."
     }
   ]
 }
