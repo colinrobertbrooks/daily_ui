@@ -13,6 +13,7 @@ $(document).ready(function(){
   });
 });
 
+
 //timer functions
 function startTimer() {
   var min = $('#minutes-selection').val();
