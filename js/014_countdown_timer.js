@@ -34,7 +34,7 @@ function countdown (target, minutes, seconds) {
     //update display
     var display = d3.select('#' + target);
     if(currentMinutes == 0 && currentSeconds == 0) {
-      playAlert('glass')
+      playAlert('glass');
       display.text('DONE!');
       $('#countdown').css('background-color','#d9534f');
       $('#timer').addClass('flash animated');
