@@ -1,3 +1,19 @@
+//document ready function
+$(document).ready(function(){
+  //bind update default select values on dropdown change
+  $('#minutes-selection').change(function (){
+    if($('#minutes-selection').val() != 'select' && $('#seconds-selection').val() == 'select') {
+      $('#seconds-selection').prop('selectedIndex',1);
+    }
+  });
+  $('#seconds-selection').change(function (){
+    if($('#seconds-selection').val() != 'select' && $('#minutes-selection').val() == 'select') {
+      $('#minutes-selection').prop('selectedIndex',1);
+    }
+  });
+});
+
+//timer functions
 function startTimer() {
   var min = $('#minutes-selection').val();
   var sec = $('#seconds-selection').val();
@@ -19,16 +35,16 @@ function resetTimer () {
 function countdown (target, minutes, seconds) {
   var currentMinutes = minutes;
   var currentSeconds = seconds;
-  function tick () {
+  function decrement () {
     //decriment counter
     if ( currentSeconds > 0 ) {
       currentSeconds--;
-      setTimeout(tick, 1000);
+      setTimeout(decrement, 1000);
     } else {
       if(currentMinutes > 0) {
         currentSeconds = 59;
         currentMinutes--;
-        setTimeout(tick, 1000);
+        setTimeout(decrement, 1000);
       }
     }
     //update display
@@ -45,5 +61,5 @@ function countdown (target, minutes, seconds) {
       display.text(minString + ":" + secString);
     }
   }
-  tick();
+  decrement();
 }
