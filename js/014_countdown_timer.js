@@ -34,20 +34,10 @@ function resetTimer () {
 }
 
 function countdown (target, minutes, seconds) {
-  var currentMinutes = minutes;
-  var currentSeconds = seconds;
+  //set initial duration
+  var currentMinutes = (minutes == "select" ? 0 : minutes);
+  var currentSeconds = (seconds == "select" ? 0 : seconds);
   function decrement () {
-    //decriment counter
-    if ( currentSeconds > 0 ) {
-      currentSeconds--;
-      setTimeout(decrement, 1000);
-    } else {
-      if(currentMinutes > 0) {
-        currentSeconds = 59;
-        currentMinutes--;
-        setTimeout(decrement, 1000);
-      }
-    }
     //update display
     var display = d3.select('#' + target);
     if(currentMinutes == 0 && currentSeconds == 0) {
@@ -60,6 +50,17 @@ function countdown (target, minutes, seconds) {
       var minString = (currentMinutes < 10 ? "0" : "") + currentMinutes.toString();
       var secString = (currentSeconds < 10 ? "0" : "") + String(currentSeconds);
       display.text(minString + ":" + secString);
+    }
+    //decriment duration
+    if ( currentSeconds > 0 ) {
+      currentSeconds--;
+      setTimeout(decrement, 1000);
+    } else {
+      if(currentMinutes > 0) {
+        currentSeconds = 59;
+        currentMinutes--;
+        setTimeout(decrement, 1000);
+      }
     }
   }
   decrement();

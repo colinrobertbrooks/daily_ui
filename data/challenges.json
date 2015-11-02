@@ -105,12 +105,20 @@
       "description": "Direct message with a magic 8 ball. Built with React.js; responses driven by Underscore.js."
     },
     {
-      "key": 13,
+      "key": 14,
       "name": "014 Countdown Timer",
       "date": "October 30, 2015",
       "link": "/daily_ui/014_countdown_timer",
       "image": "014_countdown_timer.jpg",
       "description": "A functional minutes and seconds countdown timer."
+    },
+    {
+      "key": 15,
+      "name": "015 On/Off Switch",
+      "date": "November 2, 2015",
+      "link": "/daily_ui/015_on_off_switch",
+      "image": "015_on_off_switch.jpg",
+      "description": "A light switch with transitions driven by d3.js."
     }
   ]
 }

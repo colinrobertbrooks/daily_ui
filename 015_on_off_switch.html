@@ -4,18 +4,19 @@
     <meta charset="utf-8">
     <meta http-equiv="x-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>000: Starter | Daily UI</title>
+    <title>015: On/Off Switch | Daily UI</title>
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.0/css/bootstrap-toggle.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/000_starter.css">
+    <link rel="stylesheet" href="css/015_on_off_switch.css">
   </head>
   <body>
 
     <div class="container">
       <header class="row text-center">
         <div class="col-md-12">
-          <h1>000: Starter</h1>
+          <h1 class="transition-text">015: On/Off Switch</h1>
           <hr>
         </div>
       </header>
@@ -24,6 +25,8 @@
         <div class="row text-center">
           <div class="col-md-3"></div>
           <div class="col-md-6">
+            <p class="transition-text" id="light-switch-label">Lights</p>
+            <input type="checkbox" id="light-switch" checked data-size="large" data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
           </div>
           <div class="col-md-3"></div>
         </div>
@@ -33,7 +36,7 @@
         <div class="col-md-12">
           <hr>
           <p>
-            <small>MONTH DD, 2015</small>
+            <small class="transition-text">November 2, 2015</small>
           </p>
           <a href="/daily_ui/">Back to Daily UI Index</a>
         </div>
@@ -43,6 +46,8 @@
 
     <script src="js/lib/jquery-2.1.1.min.js"></script>
     <script src="js/lib/bootstrap.min.js"></script>
-    <script src="js/000_starter.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"></script>
+    <script src="js/lib/d3.min.js"></script>
+    <script src="js/015_on_off_switch.js"></script>
   </body>
 </html>

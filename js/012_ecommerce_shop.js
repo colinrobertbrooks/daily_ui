@@ -12,12 +12,6 @@ $(document).ready(function(){
 });
 
 
-//window resize function
-$( window ).resize(function() {
-
-});
-
-
 //color square function
 function colorSquareClick (color) {
   $('.color-square').removeClass('color-selected');
@@ -52,6 +46,8 @@ function colorSquareClick (color) {
       break;
   }
 }
+
+
 //product tab change function
 function productTabClick (tab) {
   $('.product-tab').removeClass('active');
