@@ -90,11 +90,11 @@
     },
     {
       "key": 12,
-      "name": "012: Ecommerce Shop",
+      "name": "012: eCommerce Shop",
       "date": "October 28, 2015",
       "link": "/daily_ui/012_ecommerce_shop",
       "image": "012_ecommerce_shop.jpg",
-      "description": "A responsive ecommerce shop for spinning widgets, including color selection, description and reviews."
+      "description": "A responsive eCommerce shop for spinning widgets, including color selection, description and reviews."
     },
     {
       "key": 13,
@@ -119,6 +119,14 @@
       "link": "/daily_ui/015_on_off_switch",
       "image": "015_on_off_switch.jpg",
       "description": "A light switch with transitions driven by d3.js."
+    },
+    {
+      "key": 16,
+      "name": "016 Overlay",
+      "date": "November 3, 2015",
+      "link": "/daily_ui/016_overlay",
+      "image": "016_overlay.jpg",
+      "description": "Mouse-tracking tooltips for a couple of SVG elements created with d3.js."
     }
   ]
 }

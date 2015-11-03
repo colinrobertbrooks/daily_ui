@@ -1,0 +1,14 @@
+#tooltip {
+  position: absolute;
+  width: auto;
+  padding: 4px 8px;
+  color: black;
+  border: 1px solid #2D4059;
+  border-radius: 4px;
+  z-index: 9999;
+  opacity: 0.0;
+  filter: alpha(opacity=00);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+  -moz-box-shadow: 2px 2px 11px #666;
+  -webkit-box-shadow: 2px 2px 11px #666;
+}

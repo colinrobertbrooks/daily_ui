@@ -47,10 +47,18 @@
   padding-left: 10px;
   padding-right: 10px;
 }
+.challenge-border p {
+  min-height: 40px;
+}
 .challenge-img {
-  max-height: 250px;
+  max-height: 240px;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   margin-bottom: 15px;
+}
+@media only screen and (max-width: 1200px)  {
+  .challenge-img {
+    max-height: 200px;
+  }
 }
