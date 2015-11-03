@@ -47,26 +47,20 @@ html {
 .color-selected {
   border: 1px solid black;
 }
-#color-black {
+#color-1 {
   background-color: black;
 }
-#color-grey {
-  background-color: grey;
+#color-2 {
+  background-color: #5f1b00;
 }
-#color-red {
-  background-color: red;
+#color-3 {
+  background-color: #91300a;
 }
-#color-orange {
-  background-color: orange;
+#color-4{
+  background-color: #d34f1e;
 }
-#color-yellow {
-  background-color: yellow;
-}
-#color-green {
-  background-color: green;
-}
-#color-blue {
-  background-color: blue;
+#color-5 {
+  background-color: #eca106;
 }
 
 /* tabs */

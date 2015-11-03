@@ -16,33 +16,25 @@ $(document).ready(function(){
 function colorSquareClick (color) {
   $('.color-square').removeClass('color-selected');
   switch(color) {
-    case 'color-black':
-      $('#color-black').addClass('color-selected');
+    case 'color-1':
+      $('#color-1').addClass('color-selected');
       $('.fa-cog').css('color','black')
       break;
-    case 'color-grey':
-      $('#color-grey').addClass('color-selected');
-      $('.fa-cog').css('color','grey')
+    case 'color-2':
+      $('#color-2').addClass('color-selected');
+      $('.fa-cog').css('color','#5f1b00')
       break;
-    case 'color-red':
-      $('#color-red').addClass('color-selected');
-      $('.fa-cog').css('color','red')
+    case 'color-3':
+      $('#color-3').addClass('color-selected');
+      $('.fa-cog').css('color','#91300a')
       break;
-    case 'color-orange':
-      $('#color-orange').addClass('color-selected');
-      $('.fa-cog').css('color','orange')
+    case 'color-4':
+      $('#color-4').addClass('color-selected');
+      $('.fa-cog').css('color','#d34f1e')
       break;
-    case 'color-yellow':
-      $('#color-yellow').addClass('color-selected');
-      $('.fa-cog').css('color','yellow')
-      break;
-    case 'color-green':
-      $('#color-green').addClass('color-selected');
-      $('.fa-cog').css('color','green')
-      break;
-    case 'color-blue':
-      $('#color-blue').addClass('color-selected');
-      $('.fa-cog').css('color','blue')
+    case 'color-5':
+      $('#color-5').addClass('color-selected');
+      $('.fa-cog').css('color','#eca106')
       break;
   }
 }
