@@ -106,7 +106,7 @@
     },
     {
       "key": 14,
-      "name": "014 Countdown Timer",
+      "name": "014: Countdown Timer",
       "date": "October 30, 2015",
       "link": "/daily_ui/014_countdown_timer",
       "image": "014_countdown_timer.jpg",
@@ -114,7 +114,7 @@
     },
     {
       "key": 15,
-      "name": "015 On/Off Switch",
+      "name": "015: On/Off Switch",
       "date": "November 2, 2015",
       "link": "/daily_ui/015_on_off_switch",
       "image": "015_on_off_switch.jpg",
@@ -122,7 +122,7 @@
     },
     {
       "key": 16,
-      "name": "016 Overlay",
+      "name": "016: Overlay",
       "date": "November 3, 2015",
       "link": "/daily_ui/016_overlay",
       "image": "016_overlay.jpg",
