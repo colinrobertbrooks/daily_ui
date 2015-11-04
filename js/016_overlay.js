@@ -13,7 +13,7 @@ $(document).ready(function(){
     .attr('height', 50)
     .style('stroke', '#2D4059')
     .style('fill', '#EA5455')
-    .attr('data-tooltip-text','This is a rectangle')
+    .attr('data-tooltip-text','This is a square')
     .attr('data-tooltip-bg-color','#EA5455');
 
   var circle = svg.append("circle")
