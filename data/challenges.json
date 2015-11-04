@@ -127,6 +127,14 @@
       "link": "/daily_ui/016_overlay",
       "image": "016_overlay.jpg",
       "description": "Mouse-tracking tooltips for a couple of SVG elements created with d3.js."
+    },
+    {
+      "key": 17,
+      "name": "017: Email Receipt",
+      "date": "November 4, 2015",
+      "link": "http://spinning-widget-store.herokuapp.com/",
+      "image": "017_email_receipt.jpg",
+      "description": "A simple Rails app that sends eReceipts for spinning widgets via SendGrid."
     }
   ]
 }
