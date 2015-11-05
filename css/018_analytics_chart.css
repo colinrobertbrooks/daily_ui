@@ -1,0 +1,174 @@
+/* globals */
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+body {
+  padding-right:0px !important;
+  margin-right:0px !important;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* splash */
+header {
+  height: 100%;
+}
+.splash {
+  position: relative;
+  height: 100%;
+  background: rgb(245, 246, 250) url('../img/018_analytics_chart/018_analytics_chart.jpg') fixed top center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+@media only screen and (max-width: 1200px)  {
+  .splash {
+    background: url('../img/018_analytics_chart/018_analytics_chart.jpg') no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+.splash-content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+.splash-content h1 {
+  color: #fff;
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 55px;
+  font-weight: 600;
+  text-shadow: rgb(0, 0, 0) 1px 1px 1px;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+.splash-content h4 {
+  color: #e6e6e6;
+  font-family: 'Lato', sans-serif;
+  font-size: 23px;
+  letter-spacing: 3px;
+  text-shadow: rgb(0, 0, 0) 1px 1px 1px;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+#to-viz-container {
+  height: 40px;
+}
+.next-section i {
+  margin-top: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 1px solid #777;
+  background: #e6e6e6;
+  display: inline-block;
+  color: #777;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+}
+.next-section i:hover,
+.next-section i:focus {
+  border: 1px solid #000;
+  color: #000;
+}
+
+/* user select */
+#user-select-dropdown {
+  margin-top: 5px;
+  margin-bottom: 23px;
+}
+.dropdown-menu {
+  left: 50%;
+  right: auto;
+  text-align: center;
+  transform: translate(-50%, 0);
+}
+.current-selection {
+  background-color: #d4d4d4;
+}
+
+/* bar chart */
+#line-chart {
+  height: 450px;
+}
+@media only screen and (max-width: 480px)  {
+  #line-chart {
+    height: 275px;
+  }
+}
+
+/* nvd3 overrides */
+div.nvtooltip.xy-tooltip h3 {
+  font-size: 125%;
+}
+.nv-axis .tick line {
+  opacity: .5;
+}
+.nv-axis .tick text {
+  font-size: 70%;
+}
+.nv-axisMaxMin text {
+  font-size: 60%;
+}
+
+
+/* animations */
+.hide {
+  visibility: hidden;
+}
+.floating {
+  -webkit-animation-name: Floatingx;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: Floating;
+  -moz-animation-duration: 2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes Floatingx {
+  from {
+    -webkit-transform: translate(0, 0);
+  }
+  65% {
+    -webkit-transform: translate(0, 15px);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+  }
+}
+@-moz-keyframes Floating {
+  from {
+    -moz-transform: translate(0, 0);
+  }
+  65% {
+    -moz-transform: translate(0, 15px);
+  }
+  to {
+    -moz-transform: translate(0, 0);
+  }
+}

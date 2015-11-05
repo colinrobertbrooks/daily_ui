@@ -1,8 +1,9 @@
 //document ready function
 $( document ).ready(function(){
-  //load challenge data and draw challenge elements
+  //load challenge data and draw challenge elements newest first
   d3.json('data/challenges.json', function(data) {
-    drawChallenges(data.challenges);
+    var challenges = data.challenges.reverse();
+    drawChallenges(challenges);
   });
 });
 
