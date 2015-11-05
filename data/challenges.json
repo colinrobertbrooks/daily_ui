@@ -135,6 +135,14 @@
       "link": "http://spinning-widget-store.herokuapp.com/",
       "image": "017_email_receipt.jpg",
       "description": "A simple Rails app that sends eReceipts for spinning widgets via SendGrid."
+    },
+    {
+      "key": 18,
+      "name": "018: Analytics Chart",
+      "date": "November 5, 2015",
+      "link": "/daily_ui/018_analytics_chart",
+      "image": "018_analytics_chart.jpg",
+      "description": "An interactive chart displaying weather trends in Yosemite National Park between 2011 and 2015; created with React.js and d3.js."
     }
   ]
 }
