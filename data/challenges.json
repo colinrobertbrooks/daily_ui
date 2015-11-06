@@ -143,6 +143,14 @@
       "link": "/daily_ui/018_analytics_chart",
       "image": "018_analytics_chart.jpg",
       "description": "An interactive chart displaying weather trends in Yosemite National Park between 2011 and 2015; created with React.js and d3.js."
+    },
+    {
+      "key": 19,
+      "name": "019: Leaderboard",
+      "date": "November 5, 2015",
+      "link": "/daily_ui/019_leaderboard",
+      "image": "019_leaderboard.jpg",
+      "description": "Play heads or tails against a computer; built with React.js and Underscore.js."
     }
   ]
 }

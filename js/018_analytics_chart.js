@@ -34,9 +34,9 @@ var UserSelect = React.createClass({
     return (
       <div className='row text-center'>
         <div className='col-md-12'>
-          <div id="user-select-dropdown" className='dropdown'>
+          <div id='user-select-dropdown' className='dropdown'>
             <button className='btn btn-default dropdown-toggle' type='button' id='user-select' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true'>
-              <span id='select-text'>Avg Temp (ºF)</span> <span className="caret"></span>
+              <span id='select-text'>Avg Temp (ºF)</span> <span className='caret'></span>
             </button>
             <ul onClick={this.props.handleSelect} className='dropdown-menu' aria-labelledby='user-select'>
               <li><a href='javascript:void(0)' className='select current-selection' id='avg_temp_f'>Avg Temp (ºF)</a></li>
@@ -96,7 +96,7 @@ var Viz = React.createClass({
   },
   render: function() {
     return (
-      <div id="viz">
+      <div id='viz'>
         <Header />
         <UserSelect selection={this.state.selection} handleSelect={this.handleUserSelect} />
         { this.state.data.length != 0 ? <BarChart data={this.state.data} selection={this.state.selection} /> : null }

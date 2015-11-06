@@ -1,0 +1,36 @@
+/* header section */
+#header h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+#header h4 {
+  color: #d9d87b;
+  font-size: 20px;
+}
+
+/* leaderboard section */
+#leaderboard table {
+  margin-bottom: 40px;
+}
+
+/* player section */
+.player-icon {
+  font-size: 25px;
+}
+.player-selection {
+  margin-top: 15px;
+}
+
+/* result section */
+#coin-img {
+  max-height: 75px;
+}
+.text-success,
+.text-danger {
+  font-weight: bold;
+}
+
+/* reset section */
+#reset button {
+  margin-top: 20px;
+}
