@@ -1,0 +1,66 @@
+/* map styling */
+#map {
+  min-height: 477px;
+}
+@media only screen and (max-width: 992px)  {
+  #map {
+    min-height: 365px;
+  }
+}
+@media only screen and (max-width: 768px)  {
+  #map {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 220px;
+  }
+}
+@media only screen and (max-width: 480px)  {
+  #map {
+    min-height: 130px;
+  }
+}
+.state {
+  stroke: #000;
+  stroke-width: 0.5;
+  opacity: 0.8;
+}
+.state:hover {
+  opacity: 1.0;
+}
+
+/* tooltip styling */
+.tooltip {
+  position: absolute;
+  background-color: rgba(255,255,255,1.0);
+  padding: 1px;
+  border: 1px solid rgba(0,0,0,.2);
+  z-index: 10000;
+  font-family: Arial;
+  font-size: 13px;
+  text-align: left;
+  pointer-events: none;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.tooltip h4 {
+  margin: 0;
+  padding: 4px 14px;
+  line-height: 18px;
+  font-weight: normal;
+  background-color: rgba(247,247,247,0.75);
+  text-align: center;
+  border-bottom: 1px solid #ebebeb;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 1px 5px 0 0;
+}
+.tooltip p {
+  margin: 0;
+  padding: 5px 14px;
+  text-align: center;
+}

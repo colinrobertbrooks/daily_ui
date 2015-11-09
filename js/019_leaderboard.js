@@ -72,11 +72,17 @@ var Players = React.createClass({
 var UserSelect = React.createClass({
   render: function() {
     return (
-      <select id='guess' class='form-control' onChange={this.props.handleSelect}>
-        <option value='pending'>Guess</option>
-        <option value='heads'>Heads</option>
-        <option value='tails'>Tails</option>
-      </select>
+      <div className='row'>
+        <div className='col-sm-3 col-md-3'></div>
+        <div className='col-sm-6 col-md-6'>
+          <select id='guess' className='form-control' onChange={this.props.handleSelect}>
+            <option value='pending'>Guess</option>
+            <option value='heads'>Heads</option>
+            <option value='tails'>Tails</option>
+          </select>
+        </div>
+        <div className='col-sm-3 col-md-3'></div>
+      </div>
     );
   }
 });
