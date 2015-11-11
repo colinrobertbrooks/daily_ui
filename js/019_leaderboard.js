@@ -130,6 +130,11 @@ var Reset = React.createClass({
 });
 
 var UserNameModal = React.createClass({
+  componentDidMount: function () {
+    $('#user-name-modal').on('shown.bs.modal', function () {
+      $('#user-name-input').focus();
+    });
+  },
   render: function () {
     return (
       <div id='user-name-modal' className='modal fade' role='dialog'>

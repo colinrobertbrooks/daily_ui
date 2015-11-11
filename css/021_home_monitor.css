@@ -1,0 +1,20 @@
+#menu-container {
+  margin-bottom: 20px;
+}
+#sub-h3 {
+  margin-top: -10px;
+}
+#section-hr {
+  margin-top: 30px;
+}
+.section-h4 {
+  margin-bottom: 20px;
+}
+.video-screenshot-container {
+  padding: 5px;
+}
+.video-screenshot {
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}

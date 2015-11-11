@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>021: Home Monitor | Daily UI</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.0/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/021_home_monitor.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <header class="row text-center">
+        <div class="col-md-12">
+          <h1>021: Home Monitor</h1>
+          <hr>
+        </div>
+      </header>
+
+      <main>
+        <div class="row text-center">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <!-- title -->
+            <h2><i class="fa fa-home"></i> Trump Mansion</h2>
+            <h3 id="sub-h3"><small>21 Vista Drive</small></h3>
+            <!-- menu -->
+            <div id="menu-container">
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="javascript:void(0)"><i class="fa fa-lock"></i> Security</a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-lightbulb-o"></i> Lights</a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-cloud"></i> Climate</a></li>
+              </ul>
+            </div>
+            <!-- Alarm -->
+            <h4 class="section-h4"><i class="fa fa-bell"></i> Alarm</h4>
+            <input type="checkbox" id="light-switch" checked data-size="large" data-toggle="toggle" data-onstyle="danger" data-offstyle="default">
+            <!-- alerts -->
+            <hr id="section-hr">
+            <h4 class="section-h4"><i class="fa fa-exclamation-triangle"></i> Alerts</h4>
+            <p class="text-muted"><i>There are no active alerts</i></p>
+            <!-- video -->
+            <hr id="section-hr">
+            <h4 class="section-h4"><i class="fa fa-video-camera"></i> Video</h4>
+            <div class="row text-center">
+              <div class="col-sm-6 col-md-3 video-screenshot-container">
+                <img alt="Emma" src="img/021_home_monitor/driveway.jpg" class="video-screenshot img-responsive" title="Driveway">
+              </div>
+               <div class="col-sm-6 col-md-3 video-screenshot-container">
+                <img alt="Emma" src="img/021_home_monitor/livingroom.jpg" class="video-screenshot img-responsive" title="Living Room">
+              </div>
+               <div class="col-sm-6 col-md-3 video-screenshot-container">
+                <img alt="Emma" src="img/021_home_monitor/kitchen.jpg" class="video-screenshot img-responsive" title="Kitchen">
+              </div>
+               <div class="col-sm-6 col-md-3 video-screenshot-container">
+                <img alt="Emma" src="img/021_home_monitor/porch.jpg" class="video-screenshot img-responsive" title="Porch">
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </main>
+
+      <footer class="row text-center">
+        <div class="col-md-12">
+          <hr>
+          <p>
+            <small>November 10, 2015</small>
+          </p>
+          <a href="/daily_ui/">Back to Daily UI Index</a>
+        </div>
+      </footer>
+
+    </div>
+
+    <script src="js/lib/jquery-2.1.1.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"></script>
+  </body>
+</html>

@@ -159,6 +159,16 @@
       "link": "/daily_ui/020_location_tracker",
       "image": "020_location_tracker.jpg",
       "description": "A mapping of the 2016 presidential candidate locations on Monday, November 9, 2015 made with d3.js."
+    },
+    {
+      "key": 21,
+      "name": "021: Home Monitor",
+      "date": "November 10, 2015",
+      "link": "/daily_ui/021_home_monitor",
+      "image": "021_home_monitor.jpg",
+      "description": "A mockup of a home monitor for the Trump Mansion in Greenwich, CT."
     }
+
+
   ]
 }
