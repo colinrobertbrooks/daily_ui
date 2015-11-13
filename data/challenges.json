@@ -166,9 +166,15 @@
       "date": "November 10, 2015",
       "link": "/daily_ui/021_home_monitor",
       "image": "021_home_monitor.jpg",
-      "description": "A mockup of a home monitor for the Trump Mansion in Greenwich, CT."
+      "description": "A mockup of a home monitor for the Trump mansion in Greenwich, CT."
+    },
+    {
+      "key": 22,
+      "name": "022: Search",
+      "date": "November 11, 2015",
+      "link": "/daily_ui/022_search",
+      "image": "022_search.jpg",
+      "description": "Search the Seven Dwarfs; built with Typeahead.js and React.js."
     }
-
-
   ]
 }

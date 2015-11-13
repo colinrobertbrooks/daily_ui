@@ -1,0 +1,32 @@
+{
+  "dwarfs": [
+    {
+      "name": "Doc",
+      "bio": "The leader of the seven dwarfs, Doc wears glasses and often mixes up his words."
+    },
+    {
+      "name": "Dopey",
+      "bio": "Dopey is the only dwarf who does not have a beard. He is clumsy and mute, with Happy explaining that he has simply never tried to speak."
+    },
+    {
+      "name": "Bashful",
+      "bio": "Bashful is very shy and sweet. He is also described as cute. He also has a rosy blushy face and a small shy smile."
+    },
+    {
+      "name": "Grumpy",
+      "bio": "Grumpy initially disapproves of Snow White's presence in the dwarfs' home, but later warns her of the threat posed by the Queen and rushes to her aid upon realizing that she is in danger, leading the charge himself. He has the biggest nose of the dwarfs, and is frequently seen with one eye shut."
+    },
+    {
+      "name": "Sneezy",
+      "bio": "Sneezy's name is earned by his extraordinarily powerful sneezes (caused by hay fever), which are seen blowing even the heaviest of objects across a room."
+    },
+    {
+      "name": "Sleepy",
+      "bio": "Sleepy is always tired and appears laconic in most situations."
+    },
+    {
+      "name": "Happy",
+      "bio": "Happy is the joyous dwarf and is usually portrayed laughing."
+    }
+  ]
+}
