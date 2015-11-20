@@ -172,3 +172,13 @@ div.nvtooltip.xy-tooltip h3 {
     -moz-transform: translate(0, 0);
   }
 }
+
+/* internet explorer */
+@media screen and (min-width:0\0) {
+  .splash-content {
+    display: inline !important;
+  }
+  #main-title {
+    margin-top: 20%;
+  }
+}

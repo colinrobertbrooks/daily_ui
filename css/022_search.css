@@ -76,6 +76,9 @@
 .gist{
   font-size: 14px;
 }
+input:-ms-input-placeholder {
+    color: #a3a3a3;
+}
 
 /* dwarf img */
 .dwarf-img {

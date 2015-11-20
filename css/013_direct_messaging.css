@@ -25,6 +25,7 @@ header {
   margin-bottom: 2px;
   margin-right: 6px;
   max-height: 25px;
+  max-width: 25px;
   background-color: white;
   border-radius: 50px
 }
