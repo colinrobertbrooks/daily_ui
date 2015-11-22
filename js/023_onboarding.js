@@ -2,17 +2,16 @@
 var tour = new Tour({
   storage: false,
   keyboard: false,
+  backdrop: true,
   steps: [
     {
       orphan: true,
-      backdrop: true,
-      title: 'Welcome to Demo App',
+      title: 'Welcome',
       content: 'Thanks for signing up for Demo App! If you would like a quick tour of your profile, then click "Next". Otherwise click "End Tour".'
     },
     {
       element: '#user-gravatar',
       placement: 'bottom',
-      backdrop: true,
       backdropPadding: 5,
       title: 'Profile Picture',
       content: 'This is your profile picture. You can change it in settings.'
@@ -20,7 +19,6 @@ var tour = new Tour({
     {
       element: '#user-edit',
       placement: 'bottom',
-      backdrop: true,
       backdropPadding: 5,
       title: 'Settings',
       content: 'Click here to access settings. In addition to changing your profile picture, you can also change other settings, including your name, email and password.'
@@ -28,14 +26,12 @@ var tour = new Tour({
     {
       element: '#sect-1-btn',
       placement: 'bottom',
-      backdrop: true,
       title: 'Section 1',
-      content: 'This the section of your profile where you add data (you are currently in this section).'
+      content: 'This is the section of your profile where you add data (you are currently in this section).'
     },
     {
       element: '#add-data',
       placement: 'bottom',
-      backdrop: true,
       backdropPadding: 5,
       title: 'Adding Data',
       content: 'Click here to add data to section 1.'
@@ -43,7 +39,6 @@ var tour = new Tour({
     {
       element: '#sect-2-btn',
       placement: 'bottom',
-      backdrop: true,
       title: 'Section 2',
       content: 'Once you add data in section 1 you will be able to access section 2, which has more features.'
     },
@@ -57,21 +52,13 @@ var tour = new Tour({
     },
     {
       element: '#user-profile-link',
-      placement: 'bottom',
-      backdrop: true,
-      onShow: function () {
-        toggleNavBarMenu('show');
-      },
-      onHidden: function () {
-        toggleNavBarMenu('hide');
-      },
+      placement: ($(document).width() <= 767 ? null : 'bottom' ),
       title: 'Profile Link',
       content: 'You can always get back to your profile from any page on the site by clicking here in the menu as long as your logged in.'
     },
     {
       element: '#replay-tour-btn',
       placement: 'bottom',
-      backdrop: true,
       title: 'The End',
       content: "That's it! You can replay the tour by clicking here."
     },
@@ -162,12 +149,3 @@ ReactDOM.render(
   <Profile />,
   document.getElementById('react-hook')
 );
-
-
-//helper functions
-function toggleNavBarMenu (opt) {
-  var screenWidth = $(document).width();
-  if(screenWidth <= 767) {
-    $(".navbar-collapse").collapse(opt);
-  }
-}

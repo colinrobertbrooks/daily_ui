@@ -175,6 +175,14 @@
       "link": "/daily_ui/022_search",
       "image": "022_search.jpg",
       "description": "Search the Seven Dwarfs; built with Typeahead.js and React.js."
+    },
+    {
+      "key": 23,
+      "name": "023: Onboarding",
+      "date": "November 21, 2015",
+      "link": "/daily_ui/023_onboarding",
+      "image": "023_onboarding.jpg",
+      "description": "An interactive profile tour built with the Bootstrap Tour library."
     }
   ]
 }
