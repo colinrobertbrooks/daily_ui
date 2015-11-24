@@ -106,6 +106,6 @@ ReactDOM.render(
 
 //helper functions
 function generateSource(videoID, origin) {
-  var src = 'http://www.youtube.com/embed/' + videoID + '?enablejsapi=1&autoplay=1&origin=' + origin;
+  var src = 'https://www.youtube.com/embed/' + videoID + '?controls=1&autohide=1&autoplay=1&origin=' + origin;
   return src
 }
