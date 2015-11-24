@@ -81,6 +81,9 @@ var App = React.createClass({
     $('#gallery').flickity().flickity( 'select', thisVideoData.rank - 1 );
     $('.gallery-video').removeClass('video-selected');
     $('#video-' + thisVideoData.rank).addClass('video-selected');
+    setTimeout(function() {
+      $('#gallery').flickity().flickity('resize');
+    }, 600);
   },
   render: function() {
     return (
