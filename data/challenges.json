@@ -191,6 +191,14 @@
       "link": "/daily_ui/024_boarding_pass",
       "image": "024_boarding_pass.jpg",
       "description": "A boarding pass generator, including a code 128 barcode, built with React.js."
+    },
+    {
+      "key": 25,
+      "name": "025: TV App",
+      "date": "November 24, 2015",
+      "link": "/daily_ui/025_tv_app",
+      "image": "025_tv_app.jpg",
+      "description": "A video player of the top 10 TED talks built with Flickity, React.js and the YouTube iframe API."
     }
   ]
 }

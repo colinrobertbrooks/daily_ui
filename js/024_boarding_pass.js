@@ -24,7 +24,7 @@ var StepOne = React.createClass({
         <div className='col-md-3'></div>
         <div id='name-input-container' className='col-md-6 animated fadeInLeftBig'>
           <h3 className='demo-air-h3'><i className="fa fa-user"></i></h3>
-          <p className='demo-air-p'>What's your name?</p>
+          <p className='demo-air-p'>What is your name?</p>
           <div className='input-group'>
             <input type='text' className='form-control text-center' id='name-input' placeholder='enter passenger name' onKeyPress={this.props.enter}></input>
             <span className='input-group-btn'>
@@ -200,7 +200,7 @@ var StepFour = React.createClass({
               <div className='col-md-12'>
                 <hr></hr>
                 <p id='no-bar-code'><i>Rotate screen for barcode</i></p>
-                <canvas id='bar-code' width='420' height='50'></canvas>
+                <canvas id='bar-code' width='420' height='50' title='Code 128 barcode'></canvas>
                 <p className='text-muted'>BOARDING PASS</p>
               </div>
             </div>
@@ -253,7 +253,7 @@ var App = React.createClass({
       });
     }.bind(this), 800);
   },
-  enterClick: function (e) {
+  handleEnterKey: function (e) {
     if(e.which == 13) {
       switch(this.state.step) {
       case 1:
@@ -319,9 +319,9 @@ var App = React.createClass({
         <div className='col-md-12'>
           {this.state.boardingPassCreator == false ? <InitiateButton click={this.initiateBoardingPassCreator}/> : null}
           {this.state.boardingPassCreator == true ? <AppHeader /> : null}
-          {this.state.step == 1 ? <StepOne click={this.setPassengerName} enter={this.enterClick} /> : null}
-          {this.state.step == 2 ? <StepTwo click={this.setOriginName} enter={this.enterClick} data={this.state.airportCodes} /> : null}
-          {this.state.step == 3 ? <StepThree click={this.setDestinationName} enter={this.enterClick} data={this.state.airportCodes} /> : null}
+          {this.state.step == 1 ? <StepOne click={this.setPassengerName} enter={this.handleEnterKey} /> : null}
+          {this.state.step == 2 ? <StepTwo click={this.setOriginName} enter={this.handleEnterKey} data={this.state.airportCodes} /> : null}
+          {this.state.step == 3 ? <StepThree click={this.setDestinationName} enter={this.handleEnterKey} data={this.state.airportCodes} /> : null}
           {this.state.step == 4 ? <StepFour name={this.state.name} origin={this.state.origin} destination={this.state.destination} data={this.state.data} /> : null}
         </div>
       </div>
