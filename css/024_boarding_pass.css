@@ -1,0 +1,208 @@
+/* global */
+html {
+  overflow-x: hidden;
+}
+
+/* brand styling */
+#demo-air-h1 {
+  font-family: 'Oleo Script', cursive;
+  color: #ea5455;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.demo-air-h3 {
+  margin-bottom: 3px;
+}
+.demo-air-p {
+  font-weight: bold;
+  color: #2d4059;
+}
+.form-control {
+  border: 1px solid #2d4059;
+}
+
+/* button styling */
+#initiate-btn {
+  background-color: white;
+  color: #2d4059;
+  border: 1px solid #2d4059;
+}
+#initiate-btn:hover,
+#initiate-btn:focus {
+  color: white;
+  background-color: #ea5455;
+}
+.da-form-btn {
+  background-color: #ea5455;
+  color: white;
+  border: 1px solid #2d4059;
+}
+.da-form-btn:hover,
+.da-form-btn:focus {
+  background-color: #f07b3f;
+  color: #2d4059;
+}
+
+/* ticket styling */
+#ticket-container {
+  border: 2px solid #2d4059;
+  border-radius: 6px;
+  background-color: white;
+}
+#ticket-header {
+  background-color: #2d4059;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  margin-bottom: 13px;
+
+}
+#ticket-header p {
+  font-family: 'Oleo Script', cursive;
+  color: white;
+  font-size: 25px;
+  margin-bottom: 0px;
+}
+#ticket-body {
+  margin: 2px;
+  font-size: 17px;
+}
+.yellow-text {
+  color: #ffd460;
+}
+.blue-text {
+  color: #2d4059;
+}
+.red-text {
+  color: #ea5455;
+}
+.airport-code-header {
+  margin-bottom: 0px;
+}
+.airport-code {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 0px;
+}
+#ticket-footer hr {
+  margin-top: 0px;
+  margin-bottom: 12px;
+}
+
+/* bar code */
+#no-bar-code {
+  display: inline-block;
+}
+#bar-code {
+  display: none;
+}
+@media only screen and (min-width: 480px)  {
+  #no-bar-code {
+    display: none;
+  }
+  #bar-code {
+    display: inline-block;
+  }
+}
+
+/* typeahead styling */
+.twitter-typeahead{
+  width: 100%;
+}
+.typeahead,
+.tt-query,
+.tt-hint{
+  width: 100%;
+  height: 30px;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 30px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+  outline: none;
+  text-align: center;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .tt-input {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .tt-input {
+    font-size: 14px;
+  }
+}
+.tt-menu{
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+     -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+          box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  max-height: 300px;
+  overflow-y: auto;
+}
+.typeahead{
+  background-color: #fff;
+}
+.typeahead:focus{
+  border: 2px solid #0097cf;
+}
+.tt-query{
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.tt-hint{
+  color: #999
+}
+.tt-suggestion{
+  padding: 3px 6px;
+  font-size: 14px;
+  line-height: 24px;
+}
+.tt-suggestion:hover{
+  cursor: pointer;
+  color: #fff;
+  background-color: #0097cf;
+}
+.tt-suggestion.tt-cursor{
+  color: #fff;
+  background-color: #0097cf;
+}
+.tt-suggestion p{
+  margin: 0;
+}
+.gist{
+  font-size: 14px;
+}
+input:-ms-input-placeholder {
+    color: #a3a3a3;
+}
+
+/* typeahead customization styling */
+input#origin-input.form-control.text-center.typeahead.tt-input,
+input#destination-input.form-control.text-center.typeahead.tt-input {
+  margin-top: 5px;
+  height: 34px;
+  border: 1px solid #2d4059;
+}
+
+/* internet explorer styling */
+@media screen and (min-width:0\0) {
+  input.typeahead.tt-input {
+    padding-top: 0px;
+  }
+  input#origin-input.form-control.text-center.typeahead.tt-input,
+  input#destination-input.form-control.text-center.typeahead.tt-input {
+    margin-top: 6px;
+  }
+}

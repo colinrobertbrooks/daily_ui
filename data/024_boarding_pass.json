@@ -1,0 +1,939 @@
+{
+  "airports": [
+    {
+      "name": "BHM",
+      "description": "Birmingham International Airport",
+      "state": "AL"
+    },
+    {
+      "name": "DHM",
+      "description": "Dothan Regional Airport",
+      "state": "AL"
+    },
+    {
+      "name": "HSV",
+      "description": "Huntsville International Airport",
+      "state": "AL"
+    },
+    {
+      "name": "MOB",
+      "description": "Mobile",
+      "state": "AL"
+    },
+    {
+      "name": "MGM",
+      "description": "Montgomery",
+      "state": "AL"
+    },
+    {
+      "name": "ANC",
+      "description": "Anchorage International Airport",
+      "state": "AK"
+    },
+    {
+      "name": "FAI",
+      "description": "Fairbanks International Airport",
+      "state": "AK"
+    },
+    {
+      "name": "JNU",
+      "description": "Juneau International Airport",
+      "state": "AK"
+    },
+    {
+      "name": "FLG",
+      "description": "Flagstaff",
+      "state": "AZ"
+    },
+    {
+      "name": "PHX",
+      "description": "Phoenix,�Phoenix Sky Harbor International Airport",
+      "state": "AZ"
+    },
+    {
+      "name": "TUS",
+      "description": "Tucson International Airport",
+      "state": "AZ"
+    },
+    {
+      "name": "YUM",
+      "description": "Yuma International Airport",
+      "state": "AZ"
+    },
+    {
+      "name": "FYV",
+      "description": "Fayetteville",
+      "state": "AR"
+    },
+    {
+      "name": "LIT",
+      "description": "Little Rock National Airport",
+      "state": "AR"
+    },
+    {
+      "name": "BUR",
+      "description": "Burbank",
+      "state": "CA"
+    },
+    {
+      "name": "FAT",
+      "description": "Fresno",
+      "state": "CA"
+    },
+    {
+      "name": "LGB",
+      "description": "Long Beach",
+      "state": "CA"
+    },
+    {
+      "name": "LAX",
+      "description": "Los Angeles International Airport",
+      "state": "CA"
+    },
+    {
+      "name": "OAK",
+      "description": "Oakland",
+      "state": "CA"
+    },
+    {
+      "name": "ONT",
+      "description": "Ontario",
+      "state": "CA"
+    },
+    {
+      "name": "PSP",
+      "description": "Palm Springs",
+      "state": "CA"
+    },
+    {
+      "name": "SMF",
+      "description": "Sacramento",
+      "state": "CA"
+    },
+    {
+      "name": "SAN",
+      "description": "San Diego",
+      "state": "CA"
+    },
+    {
+      "name": "SFO",
+      "description": "San Francisco International Airport",
+      "state": "CA"
+    },
+    {
+      "name": "SJC",
+      "description": "San Jose",
+      "state": "CA"
+    },
+    {
+      "name": "SNA",
+      "description": "Santa Ana",
+      "state": "CA"
+    },
+    {
+      "name": "ASE",
+      "description": "Aspen",
+      "state": "CO"
+    },
+    {
+      "name": "COS",
+      "description": "Colorado Springs",
+      "state": "CO"
+    },
+    {
+      "name": "DEN",
+      "description": "Denver International Airport",
+      "state": "CO"
+    },
+    {
+      "name": "GJT",
+      "description": "Grand Junction",
+      "state": "CO"
+    },
+    {
+      "name": "PUB",
+      "description": "Pueblo",
+      "state": "CO"
+    },
+    {
+      "name": "BDL",
+      "description": "Hartford",
+      "state": "CT"
+    },
+    {
+      "name": "IAD",
+      "description": "Washington,�Dulles International Airport",
+      "state": "DC"
+    },
+    {
+      "name": "DCA",
+      "description": "Washington National Airport",
+      "state": "DC"
+    },
+    {
+      "name": "DAB",
+      "description": "Daytona Beach",
+      "state": "FL"
+    },
+    {
+      "name": "FLL",
+      "description": "Fort Lauderdale-Hollywood International Airport",
+      "state": "FL"
+    },
+    {
+      "name": "RSW",
+      "description": "Fort Meyers",
+      "state": "FL"
+    },
+    {
+      "name": "JAX",
+      "description": "Jacksonville",
+      "state": "FL"
+    },
+    {
+      "name": "EYW",
+      "description": "Key West International Airport",
+      "state": "FL"
+    },
+    {
+      "name": "MIA",
+      "description": "Miami International Airport",
+      "state": "FL"
+    },
+    {
+      "name": "MCO",
+      "description": "Orlando",
+      "state": "FL"
+    },
+    {
+      "name": "PNS",
+      "description": "Pensacola",
+      "state": "FL"
+    },
+    {
+      "name": "PIE",
+      "description": "St. Petersburg",
+      "state": "FL"
+    },
+    {
+      "name": "SRQ",
+      "description": "Sarasota",
+      "state": "FL"
+    },
+    {
+      "name": "TPA",
+      "description": "Tampa",
+      "state": "FL"
+    },
+    {
+      "name": "PBI",
+      "description": "West Palm Beach",
+      "state": "FL"
+    },
+    {
+      "name": "PFN",
+      "description": "Panama City-Bay County International Airport",
+      "state": "FL"
+    },
+    {
+      "name": "ATL",
+      "description": "Atlanta Hartsfield International Airport",
+      "state": "GA"
+    },
+    {
+      "name": "AGS",
+      "description": "Augusta",
+      "state": "GA"
+    },
+    {
+      "name": "SAV",
+      "description": "Savannah",
+      "state": "GA"
+    },
+    {
+      "name": "ITO",
+      "description": "Hilo",
+      "state": "HI"
+    },
+    {
+      "name": "HNL",
+      "description": "Honolulu International Airport",
+      "state": "HI"
+    },
+    {
+      "name": "OGG",
+      "description": "Kahului",
+      "state": "HI"
+    },
+    {
+      "name": "KOA",
+      "description": "Kailua",
+      "state": "HI"
+    },
+    {
+      "name": "LIH",
+      "description": "Lihue",
+      "state": "HI"
+    },
+    {
+      "name": "BOI",
+      "description": "Boise",
+      "state": "ID"
+    },
+    {
+      "name": "MDW",
+      "description": "Chicago Midway Airport",
+      "state": "IL"
+    },
+    {
+      "name": "ORD",
+      "description": "Chicago,�O'Hare International Airport Airport",
+      "state": "IL"
+    },
+    {
+      "name": "MLI",
+      "description": "Moline",
+      "state": "IL"
+    },
+    {
+      "name": "PIA",
+      "description": "Peoria",
+      "state": "IL"
+    },
+    {
+      "name": "EVV",
+      "description": "Evansville",
+      "state": "IN"
+    },
+    {
+      "name": "FWA",
+      "description": "Fort Wayne",
+      "state": "IN"
+    },
+    {
+      "name": "IND",
+      "description": "Indianapolis International Airport",
+      "state": "IN"
+    },
+    {
+      "name": "SBN",
+      "description": "South Bend",
+      "state": "IN"
+    },
+    {
+      "name": "CID",
+      "description": "Cedar Rapids",
+      "state": "IA"
+    },
+    {
+      "name": "DSM",
+      "description": "Des Moines",
+      "state": "IA"
+    },
+    {
+      "name": "ICT",
+      "description": "Wichita",
+      "state": "KS"
+    },
+    {
+      "name": "LEX",
+      "description": "Lexington",
+      "state": "KY"
+    },
+    {
+      "name": "SDF",
+      "description": "Louisville",
+      "state": "KY"
+    },
+    {
+      "name": "BTR",
+      "description": "Baton Rouge",
+      "state": "LA"
+    },
+    {
+      "name": "MSY",
+      "description": "New Orleans International Airport",
+      "state": "LA"
+    },
+    {
+      "name": "SHV",
+      "description": "Shreveport",
+      "state": "LA"
+    },
+    {
+      "name": "AUG",
+      "description": "Augusta",
+      "state": "ME"
+    },
+    {
+      "name": "BGR",
+      "description": "Bangor",
+      "state": "ME"
+    },
+    {
+      "name": "PWM",
+      "description": "Portland",
+      "state": "ME"
+    },
+    {
+      "name": "BWI",
+      "description": "Baltimore",
+      "state": "MD"
+    },
+    {
+      "name": "BOS",
+      "description": "Boston, Logan International Airport",
+      "state": "MA"
+    },
+    {
+      "name": "HYA",
+      "description": "Hyannis",
+      "state": "MA"
+    },
+    {
+      "name": "ACK",
+      "description": "Nantucket",
+      "state": "MA"
+    },
+    {
+      "name": "ORH",
+      "description": "Worcester",
+      "state": "MA"
+    },
+    {
+      "name": "BTL",
+      "description": "Battlecreek",
+      "state": "MI"
+    },
+    {
+      "name": "DTW",
+      "description": "Detroit Metropolitan Airport",
+      "state": "MI"
+    },
+    {
+      "name": "DET",
+      "description": "Detroit",
+      "state": "MI"
+    },
+    {
+      "name": "FNT",
+      "description": "Flint",
+      "state": "MI"
+    },
+    {
+      "name": "GRR",
+      "description": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "name": "AZO",
+      "description": "Kalamazoo-Battle Creek International Airport",
+      "state": "MI"
+    },
+    {
+      "name": "LAN",
+      "description": "Lansing",
+      "state": "MI"
+    },
+    {
+      "name": "MBS",
+      "description": "Saginaw",
+      "state": "MI"
+    },
+    {
+      "name": "DLH",
+      "description": "Duluth",
+      "state": "MN"
+    },
+    {
+      "name": "MSP",
+      "description": "Minneapolis/St.Paul International Airport",
+      "state": "MN"
+    },
+    {
+      "name": "RST",
+      "description": "Rochester",
+      "state": "MN"
+    },
+    {
+      "name": "GPT",
+      "description": "Gulfport",
+      "state": "MS"
+    },
+    {
+      "name": "JAN",
+      "description": "Jackson",
+      "state": "MS"
+    },
+    {
+      "name": "MCI",
+      "description": "Kansas City",
+      "state": "MO"
+    },
+    {
+      "name": "STL",
+      "description": "St Louis, Lambert International Airport",
+      "state": "MO"
+    },
+    {
+      "name": "SGF",
+      "description": "Springfield",
+      "state": "MO"
+    },
+    {
+      "name": "BIL",
+      "description": "Billings",
+      "state": "MT"
+    },
+    {
+      "name": "LNK",
+      "description": "Lincoln",
+      "state": "NE"
+    },
+    {
+      "name": "OMA",
+      "description": "Omaha",
+      "state": "NE"
+    },
+    {
+      "name": "LAS",
+      "description": "Las Vegas,�Las Vegas McCarran International Airport",
+      "state": "NV"
+    },
+    {
+      "name": "RNO",
+      "description": "Reno-Tahoe International Airport",
+      "state": "NV"
+    },
+    {
+      "name": "MHT",
+      "description": "Manchester",
+      "state": "NH"
+    },
+    {
+      "name": "ACY",
+      "description": "Atlantic City International Airport",
+      "state": "NJ"
+    },
+    {
+      "name": "EWR",
+      "description": "Newark International Airport",
+      "state": "NJ"
+    },
+    {
+      "name": "TTN",
+      "description": "Trenton",
+      "state": "NJ"
+    },
+    {
+      "name": "ABQ",
+      "description": "Albuquerque International Airport",
+      "state": "NM"
+    },
+    {
+      "name": "ALM",
+      "description": "Alamogordo",
+      "state": "NM"
+    },
+    {
+      "name": "ALB",
+      "description": "Albany International Airport",
+      "state": "NY"
+    },
+    {
+      "name": "BUF",
+      "description": "Buffalo",
+      "state": "NY"
+    },
+    {
+      "name": "ISP",
+      "description": "Islip",
+      "state": "NY"
+    },
+    {
+      "name": "JFK",
+      "description": "New York,�John F Kennedy International Airport",
+      "state": "NY"
+    },
+    {
+      "name": "LGA",
+      "description": "New York,�La Guardia Airport",
+      "state": "NY"
+    },
+    {
+      "name": "SWF",
+      "description": "Newburgh",
+      "state": "NY"
+    },
+    {
+      "name": "ROC",
+      "description": "Rochester",
+      "state": "NY"
+    },
+    {
+      "name": "SYR",
+      "description": "Syracuse",
+      "state": "NY"
+    },
+    {
+      "name": "HPN",
+      "description": "Westchester",
+      "state": "NY"
+    },
+    {
+      "name": "AVL",
+      "description": "Asheville",
+      "state": "NC"
+    },
+    {
+      "name": "CLT",
+      "description": "Charlotte/Douglas International Airport",
+      "state": "NC"
+    },
+    {
+      "name": "FAY",
+      "description": "Fayetteville",
+      "state": "NC"
+    },
+    {
+      "name": "GSO",
+      "description": "Greensboro",
+      "state": "NC"
+    },
+    {
+      "name": "RDU",
+      "description": "Raleigh",
+      "state": "NC"
+    },
+    {
+      "name": "INT",
+      "description": "Winston-Salem",
+      "state": "NC"
+    },
+    {
+      "name": "BIS",
+      "description": "Bismark",
+      "state": "ND"
+    },
+    {
+      "name": "FAR",
+      "description": "Fargo",
+      "state": "ND"
+    },
+    {
+      "name": "CAK",
+      "description": "Akron",
+      "state": "OH"
+    },
+    {
+      "name": "CVG",
+      "description": "Cincinnati",
+      "state": "OH"
+    },
+    {
+      "name": "CLE",
+      "description": "Cleveland",
+      "state": "OH"
+    },
+    {
+      "name": "CMH",
+      "description": "Columbus",
+      "state": "OH"
+    },
+    {
+      "name": "DAY",
+      "description": "Dayton",
+      "state": "OH"
+    },
+    {
+      "name": "TOL",
+      "description": "Toledo",
+      "state": "OH"
+    },
+    {
+      "name": "OKC",
+      "description": "Oklahoma City",
+      "state": "OK"
+    },
+    {
+      "name": "TUL",
+      "description": "Tulsa",
+      "state": "OK"
+    },
+    {
+      "name": "EUG",
+      "description": "Eugene",
+      "state": "OR"
+    },
+    {
+      "name": "PDX",
+      "description": "Portland International Airport",
+      "state": "OR"
+    },
+    {
+      "name": "HIO",
+      "description": "Portland, Hillsboro Airport",
+      "state": "OR"
+    },
+    {
+      "name": "SLE",
+      "description": "Salem",
+      "state": "OR"
+    },
+    {
+      "name": "ABE",
+      "description": "Allentown",
+      "state": "PA"
+    },
+    {
+      "name": "ERI",
+      "description": "Erie",
+      "state": "PA"
+    },
+    {
+      "name": "MDT",
+      "description": "Harrisburg",
+      "state": "PA"
+    },
+    {
+      "name": "PHL",
+      "description": "Philadelphia",
+      "state": "PA"
+    },
+    {
+      "name": "PIT",
+      "description": "Pittsburgh",
+      "state": "PA"
+    },
+    {
+      "name": "AVP",
+      "description": "Scranton",
+      "state": "PA"
+    },
+    {
+      "name": "PVD",
+      "description": "Providence - T.F. Green Airport",
+      "state": "RI"
+    },
+    {
+      "name": "CHS",
+      "description": "Charleston",
+      "state": "SC"
+    },
+    {
+      "name": "CAE",
+      "description": "Columbia",
+      "state": "SC"
+    },
+    {
+      "name": "GSP",
+      "description": "Greenville",
+      "state": "SC"
+    },
+    {
+      "name": "MYR",
+      "description": "Myrtle Beach",
+      "state": "SC"
+    },
+    {
+      "name": "PIR",
+      "description": "Pierre",
+      "state": "SD"
+    },
+    {
+      "name": "RAP",
+      "description": "Rapid City",
+      "state": "SD"
+    },
+    {
+      "name": "FSD",
+      "description": "Sioux Falls",
+      "state": "SD"
+    },
+    {
+      "name": "TRI",
+      "description": "Bristol",
+      "state": "TN"
+    },
+    {
+      "name": "CHA",
+      "description": "Chattanooga",
+      "state": "TN"
+    },
+    {
+      "name": "TYS",
+      "description": "Knoxville",
+      "state": "TN"
+    },
+    {
+      "name": "MEM",
+      "description": "Memphis",
+      "state": "TN"
+    },
+    {
+      "name": "BNA",
+      "description": "Nashville",
+      "state": "TN"
+    },
+    {
+      "name": "AMA",
+      "description": "Amarillo",
+      "state": "TX"
+    },
+    {
+      "name": "AUS",
+      "description": "Austin Bergstrom International Airport",
+      "state": "TX"
+    },
+    {
+      "name": "CRP",
+      "description": "Corpus Christi",
+      "state": "TX"
+    },
+    {
+      "name": "DAL",
+      "description": "Dallas Love Field Airport",
+      "state": "TX"
+    },
+    {
+      "name": "DFW",
+      "description": "Dallas/Fort Worth International Airport",
+      "state": "TX"
+    },
+    {
+      "name": "ELP",
+      "description": "El Paso",
+      "state": "TX"
+    },
+    {
+      "name": "HOU",
+      "description": "Houston, William B Hobby Airport",
+      "state": "TX"
+    },
+    {
+      "name": "IAH",
+      "description": "Houston, George Bush Intercontinental Airport",
+      "state": "TX"
+    },
+    {
+      "name": "LBB",
+      "description": "Lubbock",
+      "state": "TX"
+    },
+    {
+      "name": "MAF",
+      "description": "Midland",
+      "state": "TX"
+    },
+    {
+      "name": "SAT",
+      "description": "San Antonio International Airport",
+      "state": "TX"
+    },
+    {
+      "name": "SLC",
+      "description": "Salt Lake City",
+      "state": "UT"
+    },
+    {
+      "name": "BTV",
+      "description": "Burlington",
+      "state": "VT"
+    },
+    {
+      "name": "MPV",
+      "description": "Montpelier",
+      "state": "VT"
+    },
+    {
+      "name": "RUT",
+      "description": "Rutland",
+      "state": "VT"
+    },
+    {
+      "name": "IAD",
+      "description": "Dulles",
+      "state": "VA"
+    },
+    {
+      "name": "PHF",
+      "description": "Newport News",
+      "state": "VA"
+    },
+    {
+      "name": "ORF",
+      "description": "Norfolk",
+      "state": "VA"
+    },
+    {
+      "name": "RIC",
+      "description": "Richmond",
+      "state": "VA"
+    },
+    {
+      "name": "ROA",
+      "description": "Roanoke",
+      "state": "VA"
+    },
+    {
+      "name": "PSC",
+      "description": "Pasco, Pasco/Tri-Cities Airport",
+      "state": "WA"
+    },
+    {
+      "name": "SEA",
+      "description": "Seattle, Tacoma International Airport",
+      "state": "WA"
+    },
+    {
+      "name": "GEG",
+      "description": "Spokane International Airport",
+      "state": "WA"
+    },
+    {
+      "name": "CRW",
+      "description": "Charleston",
+      "state": "WV"
+    },
+    {
+      "name": "CKB",
+      "description": "Clarksburg",
+      "state": "WV"
+    },
+    {
+      "name": "GRB",
+      "description": "Green Bay",
+      "state": "WI"
+    },
+    {
+      "name": "MSN",
+      "description": "Madison",
+      "state": "WI"
+    },
+    {
+      "name": "MKE",
+      "description": "Milwaukee",
+      "state": "WI"
+    },
+    {
+      "name": "CPR",
+      "description": "Casper",
+      "state": "WY"
+    },
+    {
+      "name": "CYS",
+      "description": "Cheyenne",
+      "state": "WY"
+    },
+    {
+      "name": "JAC",
+      "description": "Jackson Hole",
+      "state": "WY"
+    },
+    {
+      "name": "RKS",
+      "description": "Rock Springs",
+      "state": "WY"
+    }
+  ]
+}

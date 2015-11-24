@@ -182,7 +182,7 @@
       "date": "November 21, 2015",
       "link": "/daily_ui/023_onboarding",
       "image": "023_onboarding.jpg",
-      "description": "An interactive profile tour built with the Bootstrap Tour library."
+      "description": "An interactive profile tour built with the Bootstrap Tour library and React.js."
     }
   ]
 }
