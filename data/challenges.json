@@ -199,6 +199,16 @@
       "link": "/daily_ui/025_tv_app",
       "image": "025_tv_app.jpg",
       "description": "A video player of the top 10 TED talks built with Flickity, React.js and the YouTube iframe API."
+    },
+    {
+      "key": 26,
+      "name": "026: Subscribe",
+      "date": "December 16, 2015",
+      "link": "/daily_ui/026_subscribe",
+      "image": "026_subscribe.jpg",
+      "description": "Added an air mail enevlope-inspired border and zoom animation to make an otherwise standard Bootstrap modal more exciting."
     }
+
+
   ]
 }

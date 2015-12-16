@@ -91,7 +91,7 @@ var App = React.createClass({
         <div className='col-md-2'></div>
         <div className='col-md-8'>
           <h3>Top 10 TED Talks</h3>
-          {this.state.videoID != '' ? <p>You're watching <i>{this.state.thisVideoTitle}</i> by {this.state.thisVideoSpeaker} (ranked #{this.state.thisVideoRank})</p>: null}
+          {this.state.videoID != '' ? <p>You are watching <i>{this.state.thisVideoTitle}</i> by {this.state.thisVideoSpeaker} (ranked #{this.state.thisVideoRank})</p>: null}
           {this.state.videoID != '' ? <Player src={generateSource(this.state.thisVideoID, this.state.origin)} /> : null}
           <Gallery change={this.thisVideoChange} />
         </div>

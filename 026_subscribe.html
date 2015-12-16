@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>026: Subscribe | Daily UI</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib/bs_modal_transition.css">
+    <link rel="stylesheet" href="css/lib/animate.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/026_subscribe.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <header class="row text-center">
+        <div class="col-md-12">
+          <h1>026: Subscribe</h1>
+          <hr>
+        </div>
+      </header>
+
+      <main>
+        <div class="row text-center">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <button type="button" class="btn btn-lg subscribe-open-btn" id="js-subscribe-open">
+              <i class="fa fa-rss"></i> Subscribe
+            </button>
+            <p class="subscribe-success" id="js-subscribe-success">
+              <i class="fa fa-check"></i>
+              Thanks for subscribing!
+            </p>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+      </main>
+
+      <footer class="row text-center">
+        <div class="col-md-12">
+          <hr>
+          <p>
+            <small>December 16, 2015</small>
+          </p>
+          <a href="/daily_ui/">Back to Daily UI Index</a>
+        </div>
+      </footer>
+
+    </div>
+
+    <div id="js-modal" class="modal fade zoom" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content text-center">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3 class="modal-title">Subscribe</h3>
+          </div>
+          <div class="modal-body">
+            <div class="input-group">
+              <input type="text" class="form-control" spellcheck="false" placeholder="enter your email" id="js-email-input">
+              <span class="input-group-addon subscribe-submit-btn clickable" id='js-subscribe-submit' title="Subscribe"><i class="fa fa-rss"></i></span>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p class="text-center modal-subtext">We'll keep you posted about future updates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/lib/jquery-2.1.1.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/026_subscribe.js"></script>
+  </body>
+</html>
